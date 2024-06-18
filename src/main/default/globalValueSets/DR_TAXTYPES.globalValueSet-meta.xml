@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Digital Image</fullName>
+        <default>false</default>
+        <label>Digital Image</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtual Goods</fullName>
+        <default>false</default>
+        <label>Virtual Goods</label>
+    </customValue>
+    <customValue>
+        <fullName>Music</fullName>
+        <default>false</default>
+        <label>Music</label>
+    </customValue>
+    <customValue>
+        <fullName>Electronic Newspapers (Includes Subscriptions)</fullName>
+        <default>false</default>
+        <label>Electronic Newspapers (Includes Subscriptions)</label>
+    </customValue>
+    <customValue>
+        <fullName>Electronic Magazines (Includes Subscriptions)</fullName>
+        <default>false</default>
+        <label>Electronic Magazines (Includes Subscriptions)</label>
+    </customValue>
+    <customValue>
+        <fullName>Educational / Vocational Texts</fullName>
+        <default>false</default>
+        <label>Educational / Vocational Texts</label>
+    </customValue>
+    <customValue>
+        <fullName>eBooks</fullName>
+        <default>false</default>
+        <label>eBooks</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-Prescription Vitamins</fullName>
+        <default>false</default>
+        <label>Non-Prescription Vitamins</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-Prescription Drugs</fullName>
+        <default>false</default>
+        <label>Non-Prescription Drugs</label>
+    </customValue>
+    <customValue>
+        <fullName>Miscellaneous Supplies</fullName>
+        <default>false</default>
+        <label>Miscellaneous Supplies</label>
+    </customValue>
+    <customValue>
+        <fullName>Food - General</fullName>
+        <default>false</default>
+        <label>Food - General</label>
+    </customValue>
+    <customValue>
+        <fullName>Automatic Blood Pressure Monitors</fullName>
+        <default>false</default>
+        <label>Automatic Blood Pressure Monitors</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Star - Stove</fullName>
+        <default>false</default>
+        <label>Energy Star - Stove</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Star - Dehumidifier</fullName>
+        <default>false</default>
+        <label>Energy Star - Dehumidifier</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Star - Air Conditioner</fullName>
+        <default>false</default>
+        <label>Energy Star - Air Conditioner</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Star - Ceiling Fan</fullName>
+        <default>false</default>
+        <label>Energy Star - Ceiling Fan</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Star - Light Bulbs</fullName>
+        <default>false</default>
+        <label>Energy Star - Light Bulbs</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Star - Freezer</fullName>
+        <default>false</default>
+        <label>Energy Star - Freezer</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Star - Refrigerator</fullName>
+        <default>false</default>
+        <label>Energy Star - Refrigerator</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Star - Washer</fullName>
+        <default>false</default>
+        <label>Energy Star - Washer</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Star - Dryer</fullName>
+        <default>false</default>
+        <label>Energy Star - Dryer</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Star - Dishwasher</fullName>
+        <default>false</default>
+        <label>Energy Star - Dishwasher</label>
+    </customValue>
+    <customValue>
+        <fullName>Computer Supplies - Subscription</fullName>
+        <default>false</default>
+        <label>Computer Supplies - Subscription</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile Devices</fullName>
+        <default>false</default>
+        <label>Mobile Devices</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Equipment</fullName>
+        <default>false</default>
+        <label>Medical Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Electronics (Photographic Filming or Video Equipment)</fullName>
+        <default>false</default>
+        <label>Consumer Electronics (Photographic Filming or Video Equipment)</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Electronics (T.V. Monitor Display) - Size (&gt;4&quot;&lt;15&quot;)</fullName>
+        <default>false</default>
+        <label>Consumer Electronics (T.V. Monitor Display) - Size (&gt;4&quot;&lt;15&quot;)</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Electronics (T.V. Monitor Display) - Size (= or &gt;35&quot;)</fullName>
+        <default>false</default>
+        <label>Consumer Electronics (T.V. Monitor Display) - Size (= or &gt;35&quot;)</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Electronics (T.V. Monitor Display) - Size (= or &gt;15&quot;&lt;35&quot;)</fullName>
+        <default>false</default>
+        <label>Consumer Electronics (T.V. Monitor Display) - Size (= or &gt;15&quot;&lt;35&quot;)</label>
+    </customValue>
+    <customValue>
+        <fullName>Video Game Consoles and Accessories</fullName>
+        <default>false</default>
+        <label>Video Game Consoles and Accessories</label>
+    </customValue>
+    <customValue>
+        <fullName>Uniforms</fullName>
+        <default>false</default>
+        <label>Uniforms</label>
+    </customValue>
+    <customValue>
+        <fullName>Sports and Recreation Equipment</fullName>
+        <default>false</default>
+        <label>Sports and Recreation Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>School Supplies</fullName>
+        <default>false</default>
+        <label>School Supplies</label>
+    </customValue>
+    <customValue>
+        <fullName>School Instructional Materials</fullName>
+        <default>false</default>
+        <label>School Instructional Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>Safety Clothing (Not Suitable for Everyday Use)</fullName>
+        <default>false</default>
+        <label>Safety Clothing (Not Suitable for Everyday Use)</label>
+    </customValue>
+    <customValue>
+        <fullName>Printed Media (Non-Subscription)</fullName>
+        <default>false</default>
+        <label>Printed Media (Non-Subscription)</label>
+    </customValue>
+    <customValue>
+        <fullName>Newspapers (Includes Subscription)</fullName>
+        <default>false</default>
+        <label>Newspapers (Includes Subscription)</label>
+    </customValue>
+    <customValue>
+        <fullName>Magazines (Includes Subscriptions)</fullName>
+        <default>false</default>
+        <label>Magazines (Includes Subscriptions)</label>
+    </customValue>
+    <customValue>
+        <fullName>General Merchandise</fullName>
+        <default>false</default>
+        <label>General Merchandise</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Electronics (Non-Computer)</fullName>
+        <default>false</default>
+        <label>Consumer Electronics (Non-Computer)</label>
+    </customValue>
+    <customValue>
+        <fullName>Computers</fullName>
+        <default>false</default>
+        <label>Computers</label>
+    </customValue>
+    <customValue>
+        <fullName>Computer Supplies</fullName>
+        <default>false</default>
+        <label>Computer Supplies</label>
+    </customValue>
+    <customValue>
+        <fullName>Computer Peripheral Devices</fullName>
+        <default>false</default>
+        <label>Computer Peripheral Devices</label>
+    </customValue>
+    <customValue>
+        <fullName>Books - General Purpose</fullName>
+        <default>false</default>
+        <label>Books - General Purpose</label>
+    </customValue>
+    <customValue>
+        <fullName>Books - Educational and Vocational Texts</fullName>
+        <default>false</default>
+        <label>Books - Educational and Vocational Texts</label>
+    </customValue>
+    <customValue>
+        <fullName>Backpacks</fullName>
+        <default>false</default>
+        <label>Backpacks</label>
+    </customValue>
+    <customValue>
+        <fullName>Apparel &amp; Footwear (Everyday Use)</fullName>
+        <default>false</default>
+        <label>Apparel &amp; Footwear (Everyday Use)</label>
+    </customValue>
+    <customValue>
+        <fullName>Apparel &amp; Footwear (Athletic Use)</fullName>
+        <default>false</default>
+        <label>Apparel &amp; Footwear (Athletic Use)</label>
+    </customValue>
+    <customValue>
+        <fullName>Installation Service Charges Provided by the Seller of TPP</fullName>
+        <default>false</default>
+        <label>Installation Service Charges Provided by the Seller of TPP</label>
+    </customValue>
+    <customValue>
+        <fullName>Mandatory Maintenance Agreements - Services and Upgrades Only for Downloadable</fullName>
+        <default>false</default>
+        <label>Mandatory Maintenance Agreements - Services and Upgrades Only for Downloadable</label>
+    </customValue>
+    <customValue>
+        <fullName>Computer Services</fullName>
+        <default>false</default>
+        <label>Computer Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Consulting Services</fullName>
+        <default>false</default>
+        <label>Consulting Services</label>
+    </customValue>
+    <customValue>
+        <fullName>General Services</fullName>
+        <default>false</default>
+        <label>General Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Gift Cards</fullName>
+        <default>false</default>
+        <label>Gift Cards</label>
+    </customValue>
+    <customValue>
+        <fullName>Mandatory Maintenance Agreements - Services and Upgrades for Downloadable and Physical Products</fullName>
+        <default>false</default>
+        <label>Mandatory Maintenance Agreements - Services and Upgrades for Downloadable and Physical Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-warranty Repairs</fullName>
+        <default>false</default>
+        <label>Non-warranty Repairs</label>
+    </customValue>
+    <customValue>
+        <fullName>Online Data Storage</fullName>
+        <default>false</default>
+        <label>Online Data Storage</label>
+    </customValue>
+    <customValue>
+        <fullName>Optional Maintenance Agreements - Services and Upgrades for Downloadable Products</fullName>
+        <default>false</default>
+        <label>Optional Maintenance Agreements - Services and Upgrades for Downloadable Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Optional Maintenance Agreements - Services and Upgrades for Physical Products</fullName>
+        <default>false</default>
+        <label>Optional Maintenance Agreements - Services and Upgrades for Physical Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Optional Maintenance Agreements - Services Only for Downloadable and Physical Products</fullName>
+        <default>false</default>
+        <label>Optional Maintenance Agreements - Services Only for Downloadable and Physical Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Seminar Classes</fullName>
+        <default>false</default>
+        <label>Seminar Classes</label>
+    </customValue>
+    <customValue>
+        <fullName>Software Training</fullName>
+        <default>false</default>
+        <label>Software Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Support</fullName>
+        <default>false</default>
+        <label>Technical Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtual Currency</fullName>
+        <default>false</default>
+        <label>Virtual Currency</label>
+    </customValue>
+    <customValue>
+        <fullName>Membership Dues - General</fullName>
+        <default>false</default>
+        <label>Membership Dues - General</label>
+    </customValue>
+    <customValue>
+        <fullName>Membership Dues &amp; Professional Organization</fullName>
+        <default>false</default>
+        <label>Membership Dues &amp; Professional Organization</label>
+    </customValue>
+    <customValue>
+        <fullName>Web Hosting</fullName>
+        <default>false</default>
+        <label>Web Hosting</label>
+    </customValue>
+    <customValue>
+        <fullName>Backup Media (CD/DVD) - One Disc per Order</fullName>
+        <default>false</default>
+        <label>Backup Media (CD/DVD) - One Disc per Order</label>
+    </customValue>
+    <customValue>
+        <fullName>Software as a Service</fullName>
+        <default>false</default>
+        <label>Software as a Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Physical Software (Gaming Only)</fullName>
+        <default>false</default>
+        <label>Physical Software (Gaming Only)</label>
+    </customValue>
+    <customValue>
+        <fullName>Physical Software (Non-Gaming)</fullName>
+        <default>false</default>
+        <label>Physical Software (Non-Gaming)</label>
+    </customValue>
+    <customValue>
+        <fullName>Physical Media Kits</fullName>
+        <default>false</default>
+        <label>Physical Media Kits</label>
+    </customValue>
+    <customValue>
+        <fullName>Backup Media (CD/DVD) - One Disc per Product</fullName>
+        <default>false</default>
+        <label>Backup Media (CD/DVD) - One Disc per Product</label>
+    </customValue>
+    <customValue>
+        <fullName>Downloadable Media Kits</fullName>
+        <default>false</default>
+        <label>Downloadable Media Kits</label>
+    </customValue>
+    <customValue>
+        <fullName>Downloadable Software (Gaming Only)</fullName>
+        <default>false</default>
+        <label>Downloadable Software (Gaming Only)</label>
+    </customValue>
+    <customValue>
+        <fullName>Downloadable Software (Non-Gaming Includes Software Subscriptions)</fullName>
+        <default>false</default>
+        <label>Downloadable Software (Non-Gaming Includes Software Subscriptions)</label>
+    </customValue>
+    <customValue>
+        <fullName>Extended Download Service</fullName>
+        <default>false</default>
+        <label>Extended Download Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Optional Warranties - Purchased at Time of Sale of for Consumer Goods Labor Only</fullName>
+        <default>false</default>
+        <label>Optional Warranties - Purchased at Time of Sale of for Consumer Goods Labor Only</label>
+    </customValue>
+    <customValue>
+        <fullName>Optional Warranties - NOT Purchased at Time of Sale of for Consumer Goods Parts &amp; Labor</fullName>
+        <default>false</default>
+        <label>Optional Warranties - NOT Purchased at Time of Sale of for Consumer Goods Parts &amp; Labor</label>
+    </customValue>
+    <customValue>
+        <fullName>Optional Warranties - NOT Purchased at Time of Sale of for Consumer Goods Labor Only</fullName>
+        <default>false</default>
+        <label>Optional Warranties - NOT Purchased at Time of Sale of for Consumer Goods Labor Only</label>
+    </customValue>
+    <customValue>
+        <fullName>Mandatory Warranties</fullName>
+        <default>false</default>
+        <label>Mandatory Warranties</label>
+    </customValue>
+    <customValue>
+        <fullName>Optional Warranties - Purchased at Time of Sale of for Consumer Goods Parts &amp; Labor</fullName>
+        <default>false</default>
+        <label>Optional Warranties - Purchased at Time of Sale of for Consumer Goods Parts &amp; Labor</label>
+    </customValue>
+    <masterLabel>DR TAXTYPES</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

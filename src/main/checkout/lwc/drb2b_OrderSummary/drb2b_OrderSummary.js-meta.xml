@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>drb2b_orderSummary</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+             <property
+                name="recordId"
+                type="String"
+                label="Record Id"
+                description="Order Summary Record Id"
+                default="{!recordId}"
+            />
+            <property name="isDutyEnabled" type="Boolean" label="Show Duty" default="true" />
+            <property name="isShippingEnabled" type="Boolean" label="Show Shipping" default="true" />
+            <property name="isFeeEnabled" type="Boolean" label="Show Regulatory Fee" default="true" />
+            <property name="isTaxEnabled" type="Boolean" label="Show Tax" default="true" />
+            <property name="isIOREnabled" type="Boolean" label="Show IOR tax" default="true" />
+            <property name="isShowAll" type="Boolean" label="Show All" default="true" />
+            <property name="isGrandTotalEnabled" type="Boolean" label="Show Grand total" default="true" />
+            <property name="isSubTotalEnabled" type="Boolean" label="Show Subtotal" default="true" />
+            <property name="autoInitialize" type="Boolean" label="Auto Initialize" default="true" />
+            <property name="showPromotion" type="Boolean" label="Show Promotion" default="true" />
+        </targetConfig> 
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="recordId" type="String" label="Record Id" description="Cart Record Id" />
+            <property name="isDutyEnabled" type="Boolean" label="Show Duty" default="true" />
+            <property name="isShippingEnabled" type="Boolean" label="Show Shipping" default="true" />
+            <property name="isFeeEnabled" type="Boolean" label="Show Regulatory Fee" default="true" />
+            <property name="isTaxEnabled" type="Boolean" label="Show Tax" default="true" />
+            <property name="isIOREnabled" type="Boolean" label="Show IOR tax" default="true" />
+            <property name="isGrandTotalEnabled" type="Boolean" label="Show Grand total" default="true" />
+            <property name="isSubTotalEnabled" type="Boolean" label="Show Subtotal" default="true" />
+            <property name="isPlaceOrderEnabled" type="Boolean" label="Show Place Order" default="true" />
+            <property name="isShowAll" type="Boolean" label="Show All" default="true" />
+            <property name="bypassValidation" type="Boolean" label="Bypass Validation" />
+            <property name="placeOrder" type="Boolean" label="Place Order" default="true" />
+            <property name="autoInitialize" type="Boolean" label="Auto Initialize" default="true" role="inputOnly" />
+            <property name="showPromotion" type="Boolean" label="Show Promotion" default="true" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

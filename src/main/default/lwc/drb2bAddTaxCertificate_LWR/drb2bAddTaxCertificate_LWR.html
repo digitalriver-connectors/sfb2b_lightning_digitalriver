@@ -1,0 +1,55 @@
+<template>
+    <c-drb2b-modal size="medium" hide-close-button>
+        <div slot="header">{labels.exemptionDetailsTtl}</div>
+
+        <div if:true={isFormOpen} slot="body" class="slds-is-relative">
+            <template if:true={showSpinner}>
+                <div>
+                    <lightning-spinner alternative-text="Loading" size="large" variant="brand"></lightning-spinner>
+                </div>
+            </template>
+
+            <lightning-layout multiple-rows class="slds-m-around_xx-small">
+                <lightning-layout-item size="6" class="slds-p-around_small">
+                    <lightning-input type="text" label={labels.companyNameLbl} onchange={handleCompanyNameChange} required> </lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="6" class="slds-p-around_small">
+                    <lightning-combobox placeholder="" options={countryOptions} label={labels.countryNameLbl} onchange={handleCountryChange} value={country} read-only required> </lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="6" class="slds-p-around_small">
+                    <lightning-combobox placeholder="" options={stateOptions} label={labels.certTaxAuthLbl} onchange={handleStateChange} required> </lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="6" class="slds-p-around_small">
+                    <lightning-input type="date" class="start-date" label={labels.startDateLbl} onchange={handleStartDateChange} required> </lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="6" class="slds-p-around_small">
+                    <lightning-input type="date" class="end-date" label={labels.endDateLbl} onchange={handleEndDateChange} required> </lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="6" class="slds-p-around_small">
+                    <lightning-input
+                        type="file"
+                        class="dcm-file-input"
+                        label={labels.uploadFileLbl}
+                        accept={acceptedFormats}
+                        onchange={handleUpload}
+                        required
+                        message-when-value-missing={labels.selectMissingFileMsg}
+                    >
+                    </lightning-input>
+
+                    <span if:true={isFileSelected}> - {fileData.filename} </span>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+
+        <div slot="footer">
+            <lightning-button label={labels.submitBtnLbl} class="slds-p-right_small" variant="brand" onclick={submitCertificate}></lightning-button>
+            <lightning-button label={labels.cancelBtnLbl} onclick={closeModal}></lightning-button>
+        </div>
+    </c-drb2b-modal>
+</template>

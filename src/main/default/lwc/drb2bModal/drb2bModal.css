@@ -1,0 +1,34 @@
+.loading {
+    display: block;
+    position: fixed;
+    margin-top: -16px;
+    margin-left: -16px;
+    width: 100%;
+    z-index: 3;
+    background-color: rgba(255,255,255,.2);
+}
+
+.disabled-modal-outline{
+    outline: none;
+}
+.modal-in-modal-fix-backdrop {
+    min-width: 360%;
+    margin-left: -120%;
+}
+.modal-body-overflow {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.slds-modal__footer {
+    background: rgb(243, 242, 242);
+}
+
+.slds-modal__close {
+    top: -2.5rem !important;
+    right: -0.5rem !important;
+}
+
+.fix-position {
+    margin-top: 50px !important;
+}

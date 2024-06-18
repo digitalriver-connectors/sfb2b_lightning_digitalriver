@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>drb2b_placeOrder</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightning__FlowScreen</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="displayPlaceOrderButton" type="Boolean" label="Display PlaceOrder Button" default= "true" />
+            <property name="isSyncCheckout" type="Boolean" label="Is Synchronus checkout" default="false" />
+        </targetConfig>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="displayPlaceOrderButton" type="Boolean" label="Display PlaceOrder Button"  />
+        </targetConfig>
+    </targetConfigs>
+
+    <capabilities>
+        <capability>lightningCommunity__RelaxedCSP</capability>
+    </capabilities>
+
+</LightningComponentBundle>

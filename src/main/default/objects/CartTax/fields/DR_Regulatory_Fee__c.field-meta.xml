@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Regulatory_Fee__c</fullName>
+    <description>Regulatory Fees collected to address the manufacture, use, recovery, and recycling of Consumer Electronics products throughout the world.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Regulatory Fees collected to address the manufacture, use, recovery, and recycling of Consumer Electronics products throughout the world.</inlineHelpText>
+    <label>DR Regulatory Fee</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

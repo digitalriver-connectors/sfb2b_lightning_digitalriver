@@ -1,0 +1,31 @@
+
+
+List<MetadataService.CustomValue> customValuesList = new List<MetadataService.CustomValue>();
+
+Map<String,String> countryListMap = new Map<String,String>();
+countryListMap.put('Austria','AT');
+countryListMap.put('Belgium','BE');
+countryListMap.put('Czech Republic','CZ');
+countryListMap.put('Germany','DE');
+countryListMap.put('Denmark','DK');
+countryListMap.put('Spain','ES');
+countryListMap.put('Finland','FI');
+countryListMap.put('Ireland','IE');
+countryListMap.put('Italy','IT');
+countryListMap.put('Luxembourg','LU');
+countryListMap.put('Netherlands','NL');
+countryListMap.put('Poland','PL');
+countryListMap.put('Portugal','PT');
+countryListMap.put('Sweden','SE');
+
+for(String key : countryListMap.keySet()){
+		MetadataService.CustomValue customValue1 = new MetadataService.CustomValue();
+		customValue1.fullName = countryListMap.get(key); //API name of picklist value
+		customValue1.default_x = false;//false;
+		customValue1.description = 'Tesing';
+		customValue1.isActive = true; //false;
+		customValue1.label = key; //'United States';
+		customValuesList.add(customValue1);
+}	
+
+MetadataServiceExamples.createPicklistField('Product2','digitalriverv3__DR_Product_Country_Origin__c', 'DR Product Country Origin *', customValuesList);

@@ -1,0 +1,111 @@
+{
+    "id": "65d6d6f8-471f-4373-a6cb-0a6e6328c10d",
+    "type": "order.accepted",
+    "data": {
+        "object": {
+            "id": "190296100336",
+            "createdTime": "2020-09-01T13:48:51Z",
+            "customerId": "0034R00003KcCvXQAV",
+            "currency": "USD",
+            "email": "storefront@gmail.com",
+            "shipTo": {
+                "address": {
+                    "line1": "70 Surrey Lane",
+                    "city": "Danboro",
+                    "postalCode": "18916",
+                    "state": "CA",
+                    "country": "US"
+                },
+                "name": "RandhawaAmarjit",
+                "phone": "98765442310"
+            },
+            "shipFrom": {
+                "address": {
+                    "line1": "3000 Northwoods Pkwy",
+                    "line2": "Ste 150",
+                    "city": "Eden Prairie",
+                    "postalCode": "55344",
+                    "state": "Minnesota",
+                    "country": "US"
+                }
+            },
+            "totalAmount": 18.0,
+            "subtotal": 18.0,
+            "totalFees": 9.0,
+            "totalTax": 0.0,
+            "totalDuty": 0.0,
+            "totalDiscount": 0.0,
+            "totalShipping": 0.0,
+            "items": [
+                {
+                    "id": "99985600336",
+                    "skuId": "a1F4R000005ycAsUAI",
+                    "amount": 9.0,
+                    "quantity": 1,
+                    "metadata": {
+                        "skuId": "SS-DR-BB",
+                        "cartItemId": "a0F4R00002LjvN9UAJ"
+                    },
+                    "state": "created",
+                    "stateTransitions": {
+                        "created": "2020-09-01T13:48:51Z"
+                    },
+                    "tax": {
+                        "rate": 0.0,
+                        "amount": 0.0
+                    },
+                    "subscriptionInfo": {
+                        "subscriptionId": "a0F4R00002LjvN9UAJ",
+                        "terms": "terms.",
+                        "autoRenewal": false,
+                        "freeTrial": false,
+                        "billingAgreementId": "a684356f-a6e9-4c08-8835-c2da41b59938"
+                    },
+                    "availableToRefundAmount": 0.0
+                }
+            ],
+            "metadata": {
+                "cartId": "a0G4R00001eKpIbUAK",
+                "sfOrderId": "801DR000001jXAfYAM"
+            },
+            "updatedTime": "2020-09-01T13:48:51Z",
+            "locale": "en_US",
+            "customerType": "business",
+            "chargeType": "customer_initiated",
+            "paymentSessionId": "5f971727-9782-4d5f-afb8-2d7132bfe7c1",
+            "sellingEntity": {
+                "id": "DR_INC-ENTITY",
+                "name": "Digital River Inc."
+            },
+            "state": "accepted",
+            "stateTransitions": {
+                "accepted": "2020-09-01T13:48:54Z"
+            },
+            "fraudState": "passed",
+            "fraudStateTransitions": {
+                "passed": "2020-09-01T13:48:54Z"
+            },
+            "charges": [
+                {
+                    "id": "164f2090-50f2-4fda-a7c1-ad4490521091",
+                    "createdTime": "2020-09-01T13:48:53Z",
+                    "currency": "USD",
+                    "amount": 18.0,
+                    "state": "capturable",
+                    "captured": false,
+                    "refunded": false,
+                    "sourceId": "aaff8bfb-0ec2-4ebd-ba8c-56942f30b375",
+                    "type": "customer_initiated"
+                }
+            ],
+            "requestToBeForgotten": false,
+            "capturedAmount": 0.0,
+            "cancelledAmount": 0.0,
+            "availableToRefundAmount": 0.0,
+            "liveMode": false
+        }
+    },
+    "digitalRiverVersion": "2020-01-07",
+    "liveMode": false,
+    "createdTime": "2020-09-01T13:49:02.727Z"
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <description>Verify if the session already have a order created</description>
+        <name>Check_if_Order_exists_in_session</name>
+        <label>Check if Order exists in session</label>
+        <locationX>528</locationX>
+        <locationY>255</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Order_exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>OrderId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Clear_order_Items</targetReference>
+            </connector>
+            <label>Order exists</label>
+        </rules>
+    </decisions>
+    <description>Clears order data including order Items, order delivery group.
+Input cartCheckoutsession is required.</description>
+    <interviewLabel>Clear Order Data {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Clear Order Data</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <description>Delete order record</description>
+        <name>Clear_order</name>
+        <label>Clear order</label>
+        <locationX>1212</locationX>
+        <locationY>252</locationY>
+        <connector>
+            <targetReference>Update_order_id_from_session</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OrderId</elementReference>
+            </value>
+        </filters>
+        <object>Order</object>
+    </recordDeletes>
+    <recordDeletes>
+        <description>Delete order delivery group</description>
+        <name>Clear_Order_delivery_group</name>
+        <label>Clear Order delivery group</label>
+        <locationX>1030</locationX>
+        <locationY>252</locationY>
+        <connector>
+            <targetReference>Clear_order</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OrderId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OrderId</elementReference>
+            </value>
+        </filters>
+        <object>OrderDeliveryGroup</object>
+    </recordDeletes>
+    <recordDeletes>
+        <description>Delete Order Items</description>
+        <name>Clear_order_Items</name>
+        <label>Clear order Items</label>
+        <locationX>857</locationX>
+        <locationY>251</locationY>
+        <connector>
+            <targetReference>Clear_Order_delivery_group</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OrderId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OrderId</elementReference>
+            </value>
+        </filters>
+        <object>OrderItem</object>
+    </recordDeletes>
+    <recordUpdates>
+        <description>Clear order id from session.</description>
+        <name>Update_order_id_from_session</name>
+        <label>Update order id from session</label>
+        <locationX>1365</locationX>
+        <locationY>252</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>mainCheckoutSession.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>OrderId</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <object>CartCheckoutSession</object>
+    </recordUpdates>
+    <runInMode>SystemModeWithSharing</runInMode>
+    <start>
+        <locationX>410</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Check_if_Order_exists_in_session</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>mainCheckoutSession</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>CartCheckoutSession</objectType>
+    </variables>
+    <variables>
+        <description>Orderid</description>
+        <name>OrderId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

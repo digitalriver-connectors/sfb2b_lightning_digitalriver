@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderItem_Id__c</fullName>
+    <description>Salesforce Order Product Id (SF Order Item Id)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Salesforce Order Product Id (SF Order Item Id)</inlineHelpText>
+    <label>OrderItem Id</label>
+    <length>128</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

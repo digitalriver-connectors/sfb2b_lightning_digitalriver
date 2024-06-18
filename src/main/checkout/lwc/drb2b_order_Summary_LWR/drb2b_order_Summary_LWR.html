@@ -1,0 +1,43 @@
+<template>
+    <!-- Hide Order Summary Comp Start -->
+    <template if:true={showOrderSummaryComp}>
+        <!-- Auto Initialize start-->
+        <template if:true={autoInitialize}>
+            <lightning-spinner if:true={isLoading} alternative-text="Loading" size="medium"></lightning-spinner>
+
+            <div>
+                <div class="orderSummary slds-hide">
+                    <c-drb2b_check-out_-summary_-l-w-r
+                        if:true={isCartReady}
+                        record-id={cart.id}
+                        is-full-layout={isFullLayout}
+                        is-duty-enabled={isDutyEnabled}
+                        is-i-o-r-enabled={isIOREnabled}
+                        is-shipping-enabled={isShippingEnabled}
+                        is-tax-enabled={isTaxEnabled}
+                        is-fee-enabled={isFeeEnabled}
+                        is-grand-total-enabled={isGrandTotalEnabled}
+                        is-show-all="true"
+                        is-subtotal-enabled={isSubTotalEnabled}
+                        show-promotion={showPromotion}
+                    ></c-drb2b_check-out_-summary_-l-w-r>
+                </div>
+                <div if:true={isPlaceOrderEnabled}>
+                    <lightning-button
+                        if:true={displayPlaceOrderButton}
+                        name="place-order"
+                        variant="brand"
+                        label={labels.placeOrderBtnLbl}
+                        title={labels.placeOrderBtnLbl}
+                        class="slds-float_left slds-m-top_small"
+                        onclick={handlePlaceOrderBtnClick}
+                        disabled={disablePO}
+                    >
+                    </lightning-button>
+                </div>
+            </div>
+        </template>
+        <!-- Auto Initialize End -->
+    </template>
+    <!-- Hide Order Summary Comp  -->
+</template>

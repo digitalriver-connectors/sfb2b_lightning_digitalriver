@@ -1,0 +1,19 @@
+<template>
+    <div>Test Component</div>
+    <div if:true = {data}>
+        {data.isSelected}</br>
+        <!-- <div class="slds-col slds-size_1-of-24" >
+            <span><input type="checkbox" id="terms" name="authorize" onchange={handleTermsCheckBoxChange}
+                required="required" class="input"></input></span>
+          </div> -->
+          <lightning-button
+            name="place-order"
+            variant="brand"
+            label="Place Order"
+            title="Place Order"
+            class="slds-float_right slds-m-top_small"
+            onclick={handleTestPlaceOrderBtnClick}
+        ></lightning-button>
+        <lightning-formatted-rich-text  value={data.termsString} class=" c-label"></lightning-formatted-rich-text>
+    </div>
+</template>

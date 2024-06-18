@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Cancelled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if the Order is cancelled at DR. This will be set to true when order.cancelled event is received by SF</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if the Order is cancelled at DR. This will be set to true when order.cancelled event is received by SF</inlineHelpText>
+    <label>Order Cancelled</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,30 @@
+<template>
+    <h3 class="slds-text-title_bold">{labels.refundHeading}</h3>
+    <template if:true={isRefundAvailable}>
+        <template for:each={refunds} for:item="keyValue">
+            <p key={keyValue} onclick={handleOfflineRefundForm} data-token={keyValue.token}>
+                <a>{keyValue.refundId}</a>
+            </p>
+        </template>
+        <br />
+    </template>
+    <template if:false={isRefundAvailable}> {labels.msgNoRefundData} </template>
+    <template if:true={isRefundFormSubmitted}> {labels.msgRefundFormSubmitted} </template>
+    <lightning-spinner
+        if:true={isLoading}
+        class="slds-is-absolute slds-align_absolute-center"
+        alternative-text="Loading list..."
+        size="medium"
+        variant="brand"
+    >
+    </lightning-spinner>
+    <div>
+        <iframe
+            title="refundForm"
+            src={communityURL}
+            class="iframe-Class"
+            style="width: 80%; height: 490px; border: none"
+            onload={iframeLoaded}
+        ></iframe>
+    </div>
+</template>

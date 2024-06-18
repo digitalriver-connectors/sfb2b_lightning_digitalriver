@@ -1,0 +1,235 @@
+<template>
+    <div if:true={isShow}>
+        <!-- Loader -->
+        <template if:true={isLoading}>
+            <div
+                class="demo-only demo-only_viewport demo--inverse"
+                style="height: 6rem; background-color: #16325c; position: relative"
+            >
+                <div class="slds-spinner_container slds-is-fixed">
+                    <div role="status" class="slds-spinner slds-spinner_medium">
+                        <span class="slds-assistive-text">Loading</span>
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <!-- Loader -->
+
+        <div if:true={currentUser}>
+            <lightning-input
+                type="text"
+                label={labels.nameLabel}
+                data-id="buyerName"
+                required
+                value={currentUser.Name.value}
+                class="input"
+            ></lightning-input>
+
+            <lightning-input
+                type="email"
+                label={labels.emailLabel}
+                data-id="buyerEmail"
+                required
+                value={currentUser.Email.value}
+                class="input"
+            ></lightning-input>
+
+            <lightning-input
+                type="tel"
+                label={labels.phoneLabel}
+                data-id="buyerPhone"
+                required
+                value={currentUser.Phone.value}
+                class="input"
+            ></lightning-input>
+
+            <lightning-combobox
+                name="billTo"
+                required
+                label={labels.billtoLabel}
+                value={selectedBillingValue}
+                options={billingAddresses}
+                onchange={handleAddressChange}
+                class="input"
+            ></lightning-combobox>
+            <div if:true={showShippingAddress}>
+                <lightning-combobox
+                    name="shipTo"
+                    required
+                    label={labels.shiptoLabel}
+                    value={selectedShippingValue}
+                    options={shippingAddresses}
+                    onchange={handleAddressChange}
+                    class="input"
+                ></lightning-combobox>
+            </div>
+
+            <lightning-radio-group
+                name="purchaseType"
+                required
+                label="Purchase Type"
+                options={purchaseTypeOption}
+                value={selectedPurchaseType}
+                type="button"
+                onchange={handlePurchaseTypeChange}
+                class="input"
+            ></lightning-radio-group>
+            <template if:true={isVisibleOrganizationName}>
+                <lightning-input
+                    variant="Neutral"
+                    data-id="organizationName"
+                    required
+                    label="Organization Name"
+                    value={organizationName}
+                    onchange={handleOrganizationChange}
+                    class="input"
+                ></lightning-input>
+            </template>
+        </div>
+        <div if:false={currentUser}>
+            <lightning-input
+                type="text"
+                label="First Name"
+                data-id="GuestFirstName"
+                value={guestUserFirstName}
+                onchange={handleGuestUserDetails}
+                required
+                class="input"
+            ></lightning-input>
+            <lightning-input
+                type="text"
+                label="Last Name"
+                data-id="GuestLastName"
+                value={guestUserLastName}
+                onchange={handleGuestUserDetails}
+                required
+                class="input"
+            ></lightning-input>
+
+            <lightning-input
+                type="email"
+                label={labels.emailLabel}
+                data-id="buyerEmail"
+                value={guestUserEmail}
+                onchange={handleGuestUserDetails}
+                required
+                class="input"
+            ></lightning-input>
+
+            <lightning-input
+                type="tel"
+                label={labels.phoneLabel}
+                data-id="buyerPhone"
+                value={guestUserPhone}
+                onchange={handleGuestUserDetails}
+                required
+                class="input"
+            ></lightning-input>
+
+            <div>
+                <div if:true={isCountryStateEnabled}>
+                    <lightning-input-address
+                        address-label="Billing Address"
+                        data-id="guestBillingAddress"
+                        street-label="Street"
+                        city-label="City"
+                        country-label="Country"
+                        province-label="State"
+                        postal-code-label="PostalCode"
+                        street=""
+                        city=""
+                        country={guestUserSelectedBillingCountry}
+                        province={guestUserSelectedBillingState}
+                        country-options={countryOptions}
+                        province-options={billingStateOptions}
+                        postal-code=""
+                        field-level-help="Enter your billing address"
+                        onchange={handleBillingOptions}
+                    >
+                    </lightning-input-address>
+
+                    <lightning-input-address
+                        address-label="Shipping Address"
+                        data-id="guestShippingAddress"
+                        street-label="Street"
+                        city-label="City"
+                        country-label="Country"
+                        province-label="State"
+                        postal-code-label="PostalCode"
+                        street=""
+                        city=""
+                        country={guestUserSelectedShippingCountry}
+                        province={guestUserSelectedShippingState}
+                        country-options={supportedshippingCountryList}
+                        province-options={shippingStateOptions}
+                        postal-code=""
+                        field-level-help="Enter your shipping address"
+                        onchange={handleShippingOptions}
+                    >
+                    </lightning-input-address>
+                </div>
+
+                <div if:false={isCountryStateEnabled}>
+                    <lightning-input-address
+                        address-label="Billing Address"
+                        data-id="guestBillingAddress"
+                        street-label="Street"
+                        city-label="City"
+                        country-label="Country"
+                        province-label="State"
+                        postal-code-label="PostalCode"
+                        street=""
+                        city=""
+                        country={guestUserSelectedBillingCountry}
+                        province={guestUserSelectedBillingState}
+                        postal-code=""
+                        field-level-help="Enter your billing address"
+                        onchange={handleBillingOptions}
+                    >
+                    </lightning-input-address>
+
+                    <lightning-input-address
+                        address-label="Shipping Address"
+                        data-id="guestShippingAddress"
+                        street-label="Street"
+                        city-label="City"
+                        country-label="Country"
+                        province-label="State"
+                        postal-code-label="PostalCode"
+                        street=""
+                        city=""
+                        country={guestUserSelectedShippingCountry}
+                        province={guestUserSelectedShippingState}
+                        postal-code=""
+                        field-level-help="Enter your shipping address"
+                        onchange={handleShippingOptions}
+                    >
+                    </lightning-input-address>
+                </div>
+                <lightning-radio-group
+                    name="purchaseType"
+                    required
+                    label="Purchase Type"
+                    options={purchaseTypeOption}
+                    value={selectedPurchaseType}
+                    type="button"
+                    onchange={handlePurchaseTypeChange}
+                    class="input"
+                ></lightning-radio-group>
+                <template if:true={isVisibleOrganizationName}>
+                    <lightning-input
+                        variant="Neutral"
+                        data-id="organizationName"
+                        required
+                        label="Organization Name"
+                        value={organizationName}
+                        onchange={handleOrganizationChange}
+                        class="input"
+                    ></lightning-input>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

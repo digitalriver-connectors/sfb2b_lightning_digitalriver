@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Managed_Fulfillment__c</fullName>
+    <description>Signifies the product is physically fulfilled by Digital River</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Signifies the product is physically fulfilled by Digital River</inlineHelpText>
+    <label>DR Managed Fulfillment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DRGlobalFulfillment</fullName>
+                <default>false</default>
+                <label>DRGlobalFulfillment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

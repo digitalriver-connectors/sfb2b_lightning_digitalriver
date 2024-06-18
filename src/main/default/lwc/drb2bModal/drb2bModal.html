@@ -1,0 +1,40 @@
+<template>
+  <div class="modalContainer slds-theme_default" style={modalStyle}>
+    <div>
+      <section role="dialog" tabindex="-1" class={modalSectionStyle}>
+        <div class="slds-modal__container">
+          <header class="slds-modal__header">
+            <template if:false={hideCloseButton}>
+              <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                      title="Close" onclick={close}>
+                <lightning-icon icon-name="utility:close" size="medium" variant="inverse">
+                </lightning-icon>
+                <span class="slds-assistive-text">Close</span>
+              </button>
+            </template>
+            <slot name="header">Header</slot>
+          </header>
+          <div class="slds-modal__content slds-p-around_medium" style={bodyStyle}>
+            <template if:true={loading}>
+              <div class="loading">
+                <lightning-spinner alternative-text={LoadingLabel} size="medium"></lightning-spinner>
+              </div>
+            </template>
+            <div class="modal-body-overflow" style={bodyStyle}>
+              <slot name="body">Body</slot>
+            </div>
+          </div>
+          <footer class="slds-modal__footer">
+            <slot name="footer">
+              Footer
+            </slot>
+
+          </footer>
+        </div>
+      </section>
+      <template if:true={showBackdrop}>
+        <div class="slds-backdrop slds-backdrop_open modal-in-modal-fix-backdrop"></div>
+      </template>
+    </div>
+  </div>
+</template>

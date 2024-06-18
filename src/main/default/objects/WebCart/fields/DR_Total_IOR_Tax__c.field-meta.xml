@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Total_IOR_Tax__c</fullName>
+    <description>Represents how much taxes the importer of record remits to the government.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Represents how much taxes the importer of record remits to the government.</inlineHelpText>
+    <label>DR Total IOR Tax</label>
+    <summarizedField>CartItem.DR_IOR_Tax__c</summarizedField>
+    <summaryForeignKey>CartItem.CartId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

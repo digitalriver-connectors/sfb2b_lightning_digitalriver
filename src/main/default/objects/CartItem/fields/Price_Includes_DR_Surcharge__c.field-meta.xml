@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_Includes_DR_Surcharge__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If TRUE, Indicates that the Total Price field on Cart Item has Landed Costs and Regulatory Fees Included</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If TRUE, Indicates that the Total Price field on Cart Item has Landed Costs and Regulatory Fees Included</inlineHelpText>
+    <label>Price Includes DR Surcharge</label>
+    <type>Checkbox</type>
+</CustomField>

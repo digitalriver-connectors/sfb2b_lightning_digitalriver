@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Payment_Failure_Reason__c</fullName>
+    <description>Digital River Payment Failure Reason</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Digital River Payment Failure Reason</inlineHelpText>
+    <label>DR Payment Failure Reason</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

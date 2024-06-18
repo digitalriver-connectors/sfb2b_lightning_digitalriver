@@ -1,0 +1,113 @@
+<template>
+    <!-- show Tax Identifiers Component Start -->
+  <template if:true={showTIComponent}>
+    <!-- Auto Initilize start-->
+        <template if:true={autoInitialize}>
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+            </template>
+            <div class="taxidentifier slds-hide">
+                <div class="slds-p-around_x-small slds-text-title_caps">{label.taxIdentifier}</div>
+                <div class="slds-text-body_regular slds-box slds-m-around_xxx-small">
+                    <lightning-accordion class="example-accordion" onsectiontoggle={handleToggleSection}>
+                        <lightning-accordion-section name="savedTax" label={label.savedTaxId}>
+                            <lightning-layout multiple-rows>
+                                <lightning-layout-item size="12" 
+                                    small-device-size="12"
+                                    large-device-size = "6"
+                                    padding="around-small">
+                                        <lightning-checkbox-group
+                                        if:true={taxData}
+                                        name="Checkbox Group"
+                                        label=""
+                                        options={taxData}
+                                        value={value}
+                                        onchange={handleSelectTaxId}
+                                        ></lightning-checkbox-group>
+                                </lightning-layout-item>
+                                <lightning-layout-item size="12"
+                                    small-device-size="12"
+                                    large-device-size = "6"
+                                    padding="around-small">
+                                    
+                                    <lightning-button
+                                    variant="brand"
+                                    label={label.newTaxId}
+                                    icon-name="utility:add"
+                                    class="slds-float_right"
+                                    onclick={handleOpenTaxIdModal}
+                                ></lightning-button>
+
+                                </lightning-layout-item>
+                            </lightning-layout>
+                            <lightning-button
+                                        label={label.applyTaxId}
+                                        onclick={handleApplyTaxIdentifier}
+                                        class="slds-m-left_x-small"
+                                        disabled={disableApply}
+                                ></lightning-button>
+                            <!-- <div class="slds-grid slds-wrap">
+                                <div class="slds-col slds-size_8-of-12">
+                                    <lightning-checkbox-group
+                                        if:true={taxData}
+                                        name="Checkbox Group"
+                                        label=""
+                                        options={taxData}
+                                        value={value}
+                                        onchange={handleSelectTaxId}
+                                    ></lightning-checkbox-group>
+                                </div>
+                                <div class="slds-col slds-size_4-of-12">
+                                    <lightning-button
+                                        variant="brand"
+                                        label={label.newTaxId}
+                                        icon-name="utility:add"
+                                        class="slds-float_right"
+                                        onclick={handleOpenTaxIdModal}
+                                    ></lightning-button>
+                                </div>
+                                <div class="slds-col slds-size_12-of-12 slds-m-top_small">
+                                    <lightning-button
+                                        label={label.applyTaxId}
+                                        onclick={handleApplyTaxIdentifier}
+                                        class="slds-m-left_x-small"
+                                        disabled={disableApply}
+                                    ></lightning-button>
+                                </div>
+                            </div> -->
+                        </lightning-accordion-section>
+
+                        <lightning-accordion-section name="savedTax" label={label.otherTaxId}>
+                            <iframe src={communityURL} class="iframe-Class slds-p-around_small" onload={iframeLoaded}> </iframe>
+                            <template for:each={pillData} for:item="pill">
+                                <lightning-pill
+                                    label={pill.value}
+                                    key={pill.id}
+                                    name={pill.id}
+                                    onremove={handleRemoveTaxId}
+                                ></lightning-pill>
+                            </template>
+                        </lightning-accordion-section>
+                    </lightning-accordion>
+                </div>
+                <c-drb2b-modal size="large" onmodalclose={getTaxIds}>
+                    <div slot="header">{label.taxIdentifier}</div>
+
+                    <div slot="body">
+                        <c-drb2b_-my-tax-identifier></c-drb2b_-my-tax-identifier>
+                    </div>
+
+                    <div slot="footer">
+                        <lightning-button
+                            label={label.close}
+                            onclick={handleCancel}
+                            class="slds-m-horizontal_small"
+                        ></lightning-button>
+                    </div>
+                </c-drb2b-modal>
+            </div>
+        </template>
+         <!-- Auto Initilize End -->
+    </template>
+     <!-- show Tax Identifiers Component End -->
+</template>

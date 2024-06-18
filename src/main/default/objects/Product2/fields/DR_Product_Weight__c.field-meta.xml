@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Product_Weight__c</fullName>
+    <description>The weight of the product measured in the unit specified by DR Unit of weight.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The weight of the product measured in the unit specified by DR Unit of weight.</inlineHelpText>
+    <label>DR Product Weight</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

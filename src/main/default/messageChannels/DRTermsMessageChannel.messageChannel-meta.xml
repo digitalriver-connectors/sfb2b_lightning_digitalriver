@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>DRTermsMessageChannel</masterLabel>
+    <isExposed>true</isExposed>
+    <description>This message service will be used to publish event from terms </description>
+    <lightningMessageFields>
+        <fieldName>isSelected</fieldName>
+        <description>This will contains true/false based on checkbox selected</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>termsString</fieldName>
+        <description>This will contains terms on which user agreed</description>
+    </lightningMessageFields>
+</LightningMessageChannel>

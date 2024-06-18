@@ -1,0 +1,1445 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>DR_Global_Btn_Submit</fullName>
+        <categories>DR Global Button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Global Button Submit</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>DR_Global_Btn_Cancel</fullName>
+        <categories>DR Global Cancel</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Global Button Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>DR_Config_Save_Failure</fullName>
+        <categories>DR APP PAGE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Config Save Failure</shortDescription>
+        <value>Unable to save DR Connector Configuration</value>
+    </labels>
+    <labels>
+        <fullName>DR_Config_Save_Success</fullName>
+        <categories>DR APP PAGE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Config Save Success</shortDescription>
+        <value
+        >Configuration update request has been submitted. You will receive an email after the job is completed.</value>
+    </labels>
+    <labels>
+        <fullName>DR_Save</fullName>
+        <categories>ALL</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR_Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>DR_Test_Connection</fullName>
+        <categories>DR APP PAGE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Test Connection</shortDescription>
+        <value>Test Connection</value>
+    </labels>
+    <labels>
+        <fullName>Sync_Products</fullName>
+        <categories>DR APP PAGE</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sync Products</shortDescription>
+        <value>Sync Products</value>
+    </labels>
+    <labels>
+        <fullName>DR_Sync_All</fullName>
+        <categories>DR APP PAGE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Sync</shortDescription>
+        <value>Sync All</value>
+    </labels>
+    <labels>
+        <fullName>DR_ReSync_All</fullName>
+        <categories>DR APP PAGE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR ReSync</shortDescription>
+        <value>Re-Sync All Products</value>
+    </labels>
+    <labels>
+        <fullName>DR_Connection_Success</fullName>
+        <categories>DR APP PAGE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Connection Test</shortDescription>
+        <value>Success: Successful Connection to Digital River.</value>
+    </labels>
+    <labels>
+        <fullName>DR_Connection_Error</fullName>
+        <categories>DR APP PAGE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Connection Test</shortDescription>
+        <value>Failure: Could not Connect to Digital River.</value>
+    </labels>
+    <labels>
+        <fullName>File_link_generation_error_msg</fullName>
+        <categories>VAT &amp; Credit memo</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File link generation error msg</shortDescription>
+        <value>File URL not generated.</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_UserDoesntHasRelatedContact</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates No Contact</shortDescription>
+        <value>The running user doesn't has a related Contact entity. Please, contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_UserDoesntHasTaxCertificates</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates No Certificates</shortDescription>
+        <value>No Tax Certificate on file. Please click Manage Tax Exemption button to upload a new certificate.</value>
+    </labels>
+    <labels>
+        <fullName>DR_Confirm_Delete_Msg</fullName>
+        <categories>DR TaxIdentifier</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Taxidentifier delete Confirmation message</shortDescription>
+        <value>Please confirm that you would like to delete this saved tax identifier.</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxId_Delete_Error_Msg</fullName>
+        <categories>DR TaxIdentifier</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Taxidentifier delete error message</shortDescription>
+        <value>The tax identifier was unable to be deleted from your profile. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxId_Delete_Success_Msg</fullName>
+        <categories>DR TaxIdentifier</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Taxidentifier delete Success message</shortDescription>
+        <value>Tax identifier successfully deleted.</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxId_Add_Success_Msg</fullName>
+        <categories>DR TaxIdentifier</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Taxidentifier add success message</shortDescription>
+        <value>Tax identifier successfully added </value>
+    </labels>
+     <labels>
+        <fullName>DR_TaxId_Already_Exist</fullName>
+        <categories>DR TaxIdentifier</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Taxidentifier already exist message</shortDescription>
+        <value>A Tax ID of this type already exists. Please delete the existing ID and try again </value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxId_Add_Error_Msg</fullName>
+        <categories>DR TaxIdentifier</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Taxidentifier already exist message</shortDescription>
+        <value>The tax identifier was unable to be added to your profile </value>
+    </labels>
+     <labels>
+        <fullName>DR_TaxId_Not_Applicable</fullName>
+        <categories>DR TaxIdentifier</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Taxidentifier not applicable message</shortDescription>
+        <value>Tax identifiers are not applicable for the selected country.</value>
+    </labels>
+     <labels>
+        <fullName>DR_TaxId_Disclaimer</fullName>
+        <categories>DR TaxIdentifier</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Taxidentifier disclaimer message</shortDescription>
+        <value>*Multiple saved tax identifiers of the same type are not permitted.</value>
+    </labels>
+    <labels>
+        <fullName>DR_No_Saved_Tax</fullName>
+        <categories>DR TaxIdentifier</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Taxidentifier disclaimer message</shortDescription>
+        <value>No previously saved tax identifiers.</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_TaxCertificatedCreated</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates Created</shortDescription>
+        <value>Tax certificate has been successfully created!</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_StartDateBeforeEndDate</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates StartDate</shortDescription>
+        <value>Tax certificate start date must be before end date</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_EndDateAfterStartDate</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates EndDate</shortDescription>
+        <value>Tax certificate end date must be after start date</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_StartDateBeforeToday</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates StartDateBeforeToday</shortDescription>
+        <value>Start Date Cannot be Future Date</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_EndDateAfterToday</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates EndDateAfterToday</shortDescription>
+        <value>Tax certificate end date must be today or after today's date</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_InvalidFile</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates InvalidFile</shortDescription>
+        <value>Max File Size Less than 10MB (Supported File Types: JPG, JPEG, PDF, PNG)</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_SelectMissingFile</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates SelectMissingFile</shortDescription>
+        <value>Max File Size Less than 10MB (Supported File Types: JPG, JPEG, PDF, PNG)</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_CompanyName</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates CompanyName</shortDescription>
+        <value>Company Name</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_CountryName</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates CountryName</shortDescription>
+        <value>Country Name</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_ExemptionCertTaxAuth</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates CountryName</shortDescription>
+        <value>Exemption Certificate Tax Authority</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_ExemptionStartDate</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates ExStartDate</shortDescription>
+        <value>Exemption Start Date</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_ExemptionEndDate</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates ExEndDate</shortDescription>
+        <value>Exemption Expiration Date</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_UploadYourCertificate</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates UploadCertificate</shortDescription>
+        <value>Upload Your Certificate</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_SubmitYourExemptionDetails</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates ExemptionDetails</shortDescription>
+        <value>Please Submit Your Tax Exemption Details</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_MyTaxCertificates</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates MyTaxCertificates</shortDescription>
+        <value>My Tax Certificates</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxCertificates_ManageTaxExemption</fullName>
+        <categories>DR TaxCertificates</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR TaxCertificates ManageTaxExemption</shortDescription>
+        <value>Manage Tax Exemption</value>
+    </labels>
+    <labels>
+        <fullName>MyWallet_DR_Source_Not_Saved</fullName>
+        <categories>My Wallet</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>My Wallet DR Sourse Not Saved</shortDescription>
+        <value>Could not save payment. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>My_Wallet_DR_Attach_Source_Customer_Failed</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>My Wallet DR Attach Source Customer Failed</shortDescription>
+        <value>Failed to Add / Update Payment Source on Server</value>
+    </labels>
+	<labels>
+        <fullName>DR_New_Payment_Add_to_Wallet</fullName>
+        <categories>My Wallet</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR New Payment Add to Wallet</shortDescription>
+        <value>You Successfully added a new payment in your wallet.</value>
+    </labels>
+	<labels>
+        <fullName>DR_Confirm_Source_Delete</fullName>
+        <categories>My Wallet</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Confirm Source Delete</shortDescription>
+        <value>Please confirm that you would like to delete this saved payment.</value>
+    </labels>
+	<labels>
+        <fullName>Saved_Payment_delete_Success_message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Saved Payment delete Success message</shortDescription>
+        <value>Saved Payment successfully deleted.</value>
+    </labels>
+	<labels>
+        <fullName>DR_Saved_Payment_Delete_Error_Msg</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Saved Payment Delete Error Msg</shortDescription>
+        <value>Unable to delete saved payment</value>
+    </labels>
+    <labels>
+        <fullName>DR_Empty_DropIN_Error</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Empty Drop In Error</shortDescription>
+        <value>There is a problem initiating payment. Please contact customer support.</value>
+    </labels>
+    <labels>
+        <fullName>DR_Contact_Address_Fields_Missing_Errors</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Contact Address Fields Missing Errors</shortDescription>
+        <value>{ } is missing for this Billing Address.</value>
+    </labels>
+    <labels>
+        <fullName>DR_Global_Confirm_Button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Global Confirm Button</shortDescription>
+        <value>Confirm</value>
+    </labels>
+    <labels>
+        <fullName>DR_Add_new_Payment_methods</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Add new Payment methods</shortDescription>
+        <value>ADD NEW DIGITAL RIVER PAYMENT METHOD</value>
+    </labels>
+    <labels>
+        <fullName>DR_Select_Billing_Address</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Select Billing Address</shortDescription>
+        <value>Select Billing Address:</value>
+    </labels>
+    <labels>
+        <fullName>DR_No_Billing_address_found</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR No Billing address found</shortDescription>
+        <value>No Billing Address Book Found,</value>
+    </labels>
+    <labels>
+        <fullName>DR_Click_to_Add</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Click to Add</shortDescription>
+        <value>Click to Add</value>
+    </labels>
+    <labels>
+        <fullName>DR_Select_Payment_Method</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Select Payment Method</shortDescription>
+        <value>Select Payment Method:</value>
+    </labels>
+    <labels>
+        <fullName>DR_Success</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Success</shortDescription>
+        <value>Success</value>
+    </labels>
+     <labels>
+        <fullName>DR_Confirm</fullName>
+        <categories>ALL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Genric confirm label</shortDescription>
+        <value>Confirm</value>
+    </labels>
+    <labels>
+        <fullName>DR_Cancel</fullName>
+        <categories>ALL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Genric cancel label</shortDescription>
+        <value>Cancel</value>
+    </labels>
+     <labels>
+        <fullName>DR_Delete</fullName>
+        <categories>ALL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Genric delete label</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>DR_Tax_Identifiers</fullName>
+        <categories>Tax Identifier</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tax identifier page header</shortDescription>
+        <value>TAX IDENTIFIERS</value>
+    </labels>
+    <labels>
+        <fullName>DR_Country</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Genric Country Label</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxId_Type</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tax identifier Type label used in table</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxId_Id</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tax identifier ID label used in table</shortDescription>
+        <value>Tax ID</value>
+    </labels>
+    <labels>
+        <fullName>DR_TaxId_State</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tax identifier State label used in table</shortDescription>
+        <value>State</value>
+    </labels>
+    <labels>
+        <fullName>DR_Select_Country_placeholder</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Genric Placeholder for country picklist</shortDescription>
+        <value>Select Country</value>
+    </labels>
+    <labels>
+        <fullName>DR_Sync_Product_Btn_Title</fullName>
+        <categories>DR APP PAGE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Sync Product Btn Title</shortDescription>
+        <value>Sync only Products that have changed since the last Product Sync to Digital River</value>
+    </labels>
+    <labels>
+        <fullName>DR_Re_Sync_Product_Btn_Title</fullName>
+        <categories>DR APP PAGE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Re Sync Product Btn Title</shortDescription>
+        <value>Sync All Products to Digital River</value>
+    </labels>
+    <labels>
+        <fullName>DR_New_Tax_ID_Label</fullName>
+        <categories>Tax Identifier</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Tax Identifier button label</shortDescription>
+        <value>New Tax Identifier</value>
+    </labels>
+    <labels>
+        <fullName>DR_Error_Update_Cart</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Genric error message used in checkout flow .</shortDescription>
+        <value>Error updating cart. Please contact the site administrator.</value>
+    </labels>
+     <labels>
+        <fullName>DR_Genric_Req_Field_Miss_Error</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Genric error message used in checkout flow</shortDescription>
+        <value>Required field missing.</value>
+    </labels>
+     <labels>
+        <fullName>DR_Business_Val</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Value used in Customer Type</shortDescription>
+        <value>Business</value>
+    </labels>
+    <labels>
+        <fullName>DR_Individual_Val</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Value used in Customer Type</shortDescription>
+        <value>Individual</value>
+    </labels>
+    <labels>
+        <fullName>DR_Name_Label</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Generic Name Label</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>DR_Email_Label</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Generic Email Label</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>DR_Phone_Label</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Generic Phone Label</shortDescription>
+        <value>Phone</value>
+    </labels>
+    <labels>
+        <fullName>DR_Bill_TO_Label</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Generic Bill to address Label</shortDescription>
+        <value>Bill To</value>
+    </labels>
+    <labels>
+        <fullName>DR_Ship_To_Label</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Generic Ship to address Label</shortDescription>
+        <value>Ship To</value>
+    </labels>
+    <labels>
+        <fullName>DR_SKU_NO</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used on cartItems component</shortDescription>
+        <value>SKU#</value>
+    </labels>
+    <labels>
+        <fullName>DR_Price_Per_Unit</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used on cartItems component</shortDescription>
+        <value>Price per unit</value>
+    </labels>
+    <labels>
+        <fullName>DR_Total_Price</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used on cartItems component</shortDescription>
+        <value>Total Price</value>
+    </labels>
+    <labels>
+        <fullName>Genric_cart_label</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Genric Cart label</shortDescription>
+        <value>Cart</value>
+    </labels>
+    <labels>
+        <fullName>DR_User_Fields_Missing_Error</fullName>
+        <categories>My Wallet</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR User Fields Missing Error</shortDescription>
+        <value>{ } is Missing. Please add { } in your profile.</value>
+    </labels>
+    <labels>
+        <fullName>DR_Total_Duty</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dr total Duty label</shortDescription>
+        <value>Duty</value>
+    </labels>
+    <labels>
+        <fullName>DR_Total_Fee</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR total Fee</shortDescription>
+        <value>Fee</value>
+    </labels>
+    <labels>
+        <fullName>DR_Shipping</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Shipping label </shortDescription>
+        <value>Shipping</value>
+    </labels>
+    <labels>
+        <fullName>DR_Generic_Total</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR generic total label</shortDescription>
+        <value>Subtotal</value>
+    </labels>
+    <labels>
+        <fullName>DR_Generic_Tax</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR tax label</shortDescription>
+        <value>Tax</value>
+    </labels>
+    <labels>
+        <fullName>DR_Grand_Total</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR grand total label</shortDescription>
+        <value>Grand Total</value>
+     </labels>
+     <labels>
+        <fullName>DR_Amount_Contributed</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Amount Contributed</shortDescription>
+        <value>Amount Contributed</value>
+     </labels>
+     <labels>
+        <fullName>DR_Remaining_Amount</fullName>
+        <categories>Checkout Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Remaining Amount To Be Contributed</shortDescription>
+        <value>Remaining Amount</value>
+     </labels>
+    <labels>
+        <fullName>DR_My_Wallet_Use_Save_Payments</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR My Wallet Use Save Payments</shortDescription>
+        <value>To use a stored payment, select a payment method and click Use Stored Payment</value>
+    </labels>
+    <labels>
+        <fullName>DR_Card_Ending_with</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Card Ending with</shortDescription>
+        <value>ending with xxxx-xxxx-xxxx-</value>
+    </labels>
+    <labels>
+        <fullName>DR_User_Store_Payment</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR User Store Payment</shortDescription>
+        <value>Use Stored Payment</value>
+    </labels>
+    <labels>
+        <fullName>DR_Place_Order_Button</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Place Order Button</shortDescription>
+        <value>Place Order</value>
+    </labels>
+    <labels>
+        <fullName>DR_Source_Authentication_Failed</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Source Authentication Failed</shortDescription>
+        <value>Source Authentication Failed.</value>
+    </labels>
+    <labels>
+        <fullName>DR_Other_Payments</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Dropin Tab Label</shortDescription>
+        <value>Payments</value>
+    </labels>
+    <labels>
+        <fullName>DR_Stored_Payment</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Store payments labels</shortDescription>
+        <value>Stored Payments</value>
+    </labels>
+    <labels>
+        <fullName>DR_Payment_Error</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment error</shortDescription>
+        <value>Something went wrong while performing your request. please contact administrator/</value>
+    </labels>
+    <labels>
+        <fullName>DR_Payment_Not_Complete_Error</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment error</shortDescription>
+        <value>Please add payment details to proceed</value>
+    </labels>
+    <labels>
+        <fullName>DR_No_Saved_Payment_Found</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment error</shortDescription>
+        <value>No Saved Payment Found.</value>
+    </labels>
+
+    <labels>
+        <fullName>DR_IOR</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IOR tax label</shortDescription>
+        <value>IOR tax</value>
+    </labels>
+
+    <labels>
+        <fullName>DR_TAX_CERTIFICATES_LINK</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tax Certificates Link</shortDescription>
+        <value>Click here to Manage your Tax Certificates</value>
+    </labels>
+
+    <labels>
+        <fullName>DR_Terms_ERROR</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dr Terms Error</shortDescription>
+        <value>Please Select the Terms and Conditions</value>
+    </labels>
+
+    <labels>
+        <fullName>DR_Saved_TaxId</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Saved taxId header label</shortDescription>
+        <value>Saved Tax Identifier</value>
+    </labels>
+
+    <labels>
+        <fullName>DR_Other_TaxId</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Other TaxId header label</shortDescription>
+        <value>Other Tax Identifier</value>
+    </labels>
+    
+    <labels>
+        <fullName>DR_Apply_TaxId</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Apply taxId buttion label</shortDescription>
+        <value>Apply Tax Identifiers</value>
+    </labels>
+    
+    <labels>
+        <fullName>DR_TaxId_Apply_Error</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tax id apply error msg</shortDescription>
+        <value>There was a problem applying the tax identifier to the checkout</value>
+    </labels>
+    
+    <labels>
+        <fullName>DR_TaxId_Apply_Success</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tax id apply text msg</shortDescription>
+        <value>Tax Identifier successfully applied</value>
+    </labels>
+
+     <labels>
+        <fullName>DR_Close_Label</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default close button label</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>DR_Payment_Information</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Information</shortDescription>
+        <value>Payment Information</value>
+    </labels>
+    <labels>
+        <fullName>DR_Credit_Card</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Credit Card</shortDescription>
+        <value>Credit Card</value>
+    </labels>
+    <labels>
+        <fullName>DR_Wire_Transfer</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Wire Transfer</shortDescription>
+        <value>Wire Transfer</value>
+    </labels>
+    <labels>
+        <fullName>DR_Delayed_Payment_Information</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delayed Payment Instructions</shortDescription>
+        <value>DELAYED PAYMENT INFORMATION</value>
+    </labels>
+    <labels>
+        <fullName>DR_Wire_Transfer_Information</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Wire Transfer Information</shortDescription>
+        <value>WIRE TRANSFER INFORMATION</value>
+    </labels>
+
+     <labels>
+        <fullName>DR_Already_Saved_validation</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tax Id added validation</shortDescription>
+        <value
+        > tax idenfier is already saved. Please click on 'Apply' button to apply this tax identifier to checkout.</value>
+    </labels>
+
+    <labels>
+        <fullName>DR_All_TaxID_Removed_Success</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR_All_TaxID_Removed_Success</shortDescription>
+        <value> All Tax Identifiers removed successfully.</value>
+    </labels>
+
+    <labels>
+        <fullName>DR_Removed_TaxId</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR_All_TaxID_Removed_Success</shortDescription>
+        <value>Removed Tax Identifier successfully </value>
+    </labels>
+    <labels>
+        <fullName>DR_Product_Code</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Product Code</shortDescription>
+        <value>Product Code :</value>
+    </labels>
+    <labels>
+        <fullName>DR_Product_Sku</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Product Sku</shortDescription>
+        <value>Product SKU :</value>
+    </labels>
+    <labels>
+        <fullName>DR_Quantity</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Quantity</shortDescription>
+        <value>Quantity :</value>
+    </labels>
+    <labels>
+        <fullName>DR_Price</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Price</shortDescription>
+        <value>Price per unit :</value>
+    </labels>
+    <labels>
+        <fullName>DR_InvalidCheckoutShipFromAddressException</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Checkout Address</shortDescription>
+        <value
+        >Digital River configurations contain invalid Ship From Address - Provider Name: {0}. Please check the name of a specified class and if it is defined as global, and implements digitalriverv3.DRB2B_CheckoutFromAddressProvider interface.</value>
+    </labels>
+    <labels>
+        <fullName>DR_InvalidCheckoutShippingChoiceException</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Checkout Shipping Choice</shortDescription>
+        <value
+        >Digital River configurations contain invalid Shipping Choice info - Provider Name: {0}. Please check the name of a specified class and if it is defined as global, and implements digitalriverv3.DRB2B_ShippingChoiceProvider interface.</value>
+    </labels>
+    <labels>
+        <fullName>DR_InvalidCheckoutSubscriptionException</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Checkout Subscription Provider</shortDescription>
+        <value
+        >Digital River configurations contain invalid Subscription - Provider Name: {0}. Please check the name of a specified class and if it is defined as global, and implements digitalriverv3.DRB2B_CheckoutSubscriptionProvider interface.</value>
+    </labels>
+    <labels>
+        <fullName>DR_My_Wallet</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR MY Wallet</shortDescription>
+        <value>My Wallet</value>
+    </labels>
+    
+    <labels>
+        <fullName>DR_PaymentFailure_Error</fullName>
+        <categories>Checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment Failure Error</shortDescription>
+        <value>There was a issue processing your payment</value>
+    </labels>
+
+    <labels>
+        <fullName>DR_Refund_Text</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refund Text</shortDescription>
+        <value>You will be redirected to Digital River Dashboard. Please click the 'Proceed' button to continue.</value>
+    </labels>
+
+    <labels>
+        <fullName>DR_Refund_Error</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refund Error</shortDescription>
+        <value>You do not have the level of access necessary to initiate Refunds</value>
+    </labels>
+
+    <labels>
+        <fullName>DR_Refund_DROrderId_Error</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Order Id is Empty</shortDescription>
+        <value>Cannot find DR Order Id for this Order</value>
+    </labels>
+    <labels>
+        <fullName>DR_Order_Creation_Error</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Order Creation Error</shortDescription>
+        <value>There was a problem with your order. Please try again.{0}</value>
+    </labels>
+     <labels>
+        <fullName>DR_Save_Payment_Msg</fullName>
+        <categories>Payment Subflow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>save Card for Subscription renewals message</shortDescription>
+        <value>You have subscription product(s) in cart. Please save Card for Subscription renewals.</value>
+    </labels>
+    <labels>
+        <fullName>DR_Configuration_Changes_Mail_Subject_Msg</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>subject message for configuration changes </shortDescription>
+        <value> Configuration Changes</value>
+    </labels>
+    <labels>
+        <fullName>DR_Deployment_status_msg</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>subject message for configuration changes </shortDescription>
+        <value> Deployment Status</value>
+    </labels>
+    <labels>
+        <fullName>DR_Configuration_Changes_Success_Mail_Content</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription> Configuration changes Success mail content</shortDescription>
+        <value>Digital River App configuration changes were updated successfully.</value>
+    </labels>
+    <labels>
+        <fullName>DR_Configuration_Changes_Error_Mail_Content</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription> Configuration changes Error mail content</shortDescription>
+        <value>Failed to update Digital River App Configuration. Please try again. </value>
+    </labels>
+    <labels>
+        <fullName>SF_Order_Updation_Error</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SF Order Updation Error</shortDescription>
+        <value>There was a problem with your order. Please try again.{1}</value>
+    </labels>
+    <labels>
+        <fullName>My_Wallet_Generic_Error_Message</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>My wallet Generic Error Message</shortDescription>
+        <value>An error has occurred. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>WireTranfer_Generic_Error_Message</fullName>
+        <categories>All</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WireTranfer Generic Error Message</shortDescription>
+        <value>Please contact customer service for payment instructions.</value>
+    </labels>
+     <labels>
+        <fullName>Return_To_Cart</fullName>
+        <categories>checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>link for cart page</shortDescription>
+        <value>Return to cart page</value>
+    </labels>
+    <labels>
+        <fullName>Missing_Invalid_Input_Parameters</fullName>
+        <categories>checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing or invalid input parameters specified</shortDescription>
+        <value>Missing or invalid input parameters specified</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_Amount</fullName>
+        <categories>checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid amount specified</shortDescription>
+        <value>Invalid amount specified</value>
+    </labels>
+    <labels>
+        <fullName>Unable_To_Retrieve_Remaining_Amount</fullName>
+        <categories>checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unable to retrieve Remaining Amount for checkout:</shortDescription>
+        <value>Unable to retrieve Remaining Amount for checkout: </value>
+    </labels>
+    <labels>
+        <fullName>DR_API_Error</fullName>
+        <categories>checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR API Error</shortDescription>
+        <value>DR API error: </value>
+    </labels>
+    <labels>
+        <fullName>DR_Promotions</fullName>
+        <categories>checkout</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Applied promotions on cart</shortDescription>
+        <value>Total Promotions</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR PaymentMethod</shortDescription>
+        <value>DR_PaymentMethod_</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_creditCard</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method Credit Card</shortDescription>
+        <value>Credit Card</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_otherPaymentMethod</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Payment Method Other Payment Method</shortDescription>
+        <value>Other Payment Method</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_wireTransfer</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Payment Method Wire Transfer</shortDescription>
+        <value>Wire Transfer</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_klarnaCredit</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Payment Method klarna</shortDescription>
+        <value>Klarna</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_alipay</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method Alipay</shortDescription>
+        <value>Alipay</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_alipayCn</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method Alipay</shortDescription>
+        <value>Alipay</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_applePay</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method Apple Pay</shortDescription>
+        <value>Apple Pay</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_bancontact</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method</shortDescription>
+        <value>Bancontact</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_blik</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method</shortDescription>
+        <value>BLIK</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_googlePay</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method Google Pay</shortDescription>
+        <value>Google Pay</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_ideal</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method iDEAL</shortDescription>
+        <value>iDEAL</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_konbini</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method Konbini</shortDescription>
+        <value>Konbini</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_fpxOnlineBanking</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method Online Banking (FPX)</shortDescription>
+        <value>Online Banking (FPX)</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_onlineBanking</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method Online Banking (IBP)</shortDescription>
+        <value>Online Banking (IBP)</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_bankTransfer</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method Online Banking (Korea Bank Transfer)</shortDescription>
+        <value>Online Banking (Korea Bank Transfer)</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_creditInstallment</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method France Installment</shortDescription>
+        <value>France Installment</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_payco</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method PayCo</shortDescription>
+        <value>PayCo</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_payPal</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method PayPal</shortDescription>
+        <value>PayPal</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_payPalBilling</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method PayPal Billing</shortDescription>
+        <value>PayPal Billing</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_payPalCredit</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method PayPal Credit</shortDescription>
+        <value>PayPal Credit</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_directDebit</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method SEPA Direct Debit</shortDescription>
+        <value>SEPA Direct Debit</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_msts</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method TreviPay</shortDescription>
+        <value>TreviPay</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_trustly</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DR Payment Method Trustly</shortDescription>
+        <value>Trustly</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_Visa</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Payment Method Visa</shortDescription>
+        <value>Visa</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_MasterCard</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Payment Method Master Card</shortDescription>
+        <value>Master Card</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_AmericanExpress</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Payment Method American Express</shortDescription>
+        <value>American Express</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_CarteBlanche</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Payment Method Carte Blanche</shortDescription>
+        <value>Carte Blanche</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_Discover</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Payment Method Discover</shortDescription>
+        <value>Discover</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_DinersClub</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Payment Method Diners Club</shortDescription>
+        <value>Diners Club</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_Maestro</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Payment Method Maestro</shortDescription>
+        <value>Maestro</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_JCB</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Payment Method JCB</shortDescription>
+        <value>JCB</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_LaserCard</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Payment Method Laser Card</shortDescription>
+        <value>Laser Card</value>
+    </labels>
+    <labels>
+        <fullName>DR_PaymentMethod_SwitchCard</fullName>
+        <categories>DR Payment Method</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Payment Method Switch Card</shortDescription>
+        <value>Switch Card</value>
+    </labels>   
+    <labels>
+        <fullName>DR_Refund_Heading</fullName>
+        <categories>DR Offline Refund</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Offline Refund Heading</shortDescription>
+        <value>Refunds</value>
+    </labels>
+    <labels>
+        <fullName>DR_Msg_No_Refund_Data</fullName>
+        <categories>DR Offline Refund</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Message No Refund Data</shortDescription>
+        <value>No refunds pending bank details.</value>
+    </labels>
+    <labels>
+        <fullName>DR_Msg_Refund_Form_Submitted</fullName>
+        <categories>DR Offline Refund</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DR Message No Refund Data</shortDescription>
+        <value
+        >You have successfully submitted your refund information. Please allow time for details to reflect accurately on the order.</value>
+    </labels>
+</CustomLabels>

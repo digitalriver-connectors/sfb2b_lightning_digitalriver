@@ -1,0 +1,172 @@
+<template>
+    <div if:true={isShowAll}>
+        <div class="slds-grid slds-wrap slds-p-around_medium" if:true={cart}>
+            <template if:true={ShowSubtotal}>
+                <div class="slds-col slds-size_1-of-2">
+                    <span>{labels.total}</span>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <span class="slds-float_right">
+                        <lightning-formatted-number
+                            format-style="currency"
+                            value={subtotal}
+                            maximum-fraction-digits="2"
+                        ></lightning-formatted-number>
+                    </span>
+                </div>
+            </template>
+            <template if:true={showPromotions}>
+                    <div class="slds-col slds-size_1-of-2">
+                        <span>{labels.promotion}</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <span class="slds-float_right">
+                            <lightning-formatted-number
+                                format-style="currency"
+                                value={cart.totalAdjustmentAmount}
+                                maximum-fraction-digits="2"
+                            ></lightning-formatted-number>
+                        </span>
+                    </div>
+            </template>
+            <template if:true={showShipping}>
+                <div class="slds-col slds-size_1-of-2">
+                    <span>{labels.shipping}</span>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <span class="slds-float_right">
+                        <lightning-formatted-number
+                            format-style="currency"
+                            value={cart.shipping}
+                            maximum-fraction-digits="2"
+                        ></lightning-formatted-number>
+                    </span>
+                </div>
+            </template>
+
+            <template if:true={showTax}>
+                <div class="slds-col slds-size_1-of-2">
+                    <span>{labels.tax}</span>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <span class="slds-float_right">
+                        <lightning-formatted-number
+                            format-style="currency"
+                            value={cart.totalTax}
+                            maximum-fraction-digits="2"
+                        ></lightning-formatted-number>
+                    </span>
+                </div>
+            </template>
+
+            <template if:true={showFee}>
+                <div class="slds-col slds-size_1-of-2">
+                    <span>{labels.totalFee}</span>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <span class="slds-float_right">
+                        <lightning-formatted-number
+                            format-style="currency"
+                            value={cart.totaFee}
+                            maximum-fraction-digits="2"
+                        ></lightning-formatted-number>
+                    </span>
+                </div>
+                <template for:each={cart.regulatoryFee} for:item="fee">
+                    <div class="slds-col slds-size_2-of-2 slds-m-horizontal_x-large slds-text-body_small" key={fee.id}>
+                        {fee.productName}
+                    </div>
+                    <div class="slds-col slds-size_1-of-2" key={fee.id}>
+                        <div class="slds-text-body_small slds-m-left_xx-large">{fee.feeType}</div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2" key={fee.id}>
+                        <div class="slds-text-body_small slds-float_right">
+                            <lightning-formatted-number
+                                format-style="currency"
+                                value={fee.amount}
+                                maximum-fraction-digits="2"
+                            ></lightning-formatted-number>
+                        </div>
+                    </div>
+                </template>
+            </template>
+
+            <template if:true={showIOR}>
+                <div class="slds-col slds-size_1-of-2">
+                    <span>{labels.IOR}</span>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <span class="slds-float_right">
+                        <lightning-formatted-number
+                            format-style="currency"
+                            value={cart.IOR}
+                            maximum-fraction-digits="2"
+                        ></lightning-formatted-number>
+                    </span>
+                </div>
+            </template>
+
+            <template if:true={showDuty}>
+                <div class="slds-col slds-size_1-of-2">
+                    <span>{labels.totalDuty}</span>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <span class="slds-float_right">
+                        <lightning-formatted-number
+                            format-style="currency"
+                            value={cart.totalDuty}
+                            maximum-fraction-digits="2"
+                        ></lightning-formatted-number>
+                    </span>
+                </div>
+            </template>
+
+            <template if:true={showGrandTotal}>
+                <div class="slds-border_top slds-size_2-of-2"></div>
+                <div class="slds-col slds-size_1-of-2">
+                    <span>{labels.grandTotal}</span>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <span class="slds-float_right">
+                        <lightning-formatted-number
+                            format-style="currency"
+                            value={cart.grandTotalAmount}
+                            maximum-fraction-digits="2"
+                        ></lightning-formatted-number>
+                    </span>
+                </div>
+            </template>
+            <template if:true={hideCustomerCreditFields}>
+                <template if:true={showAmountContributedToCheckout}>
+                    <div class="slds-border_top slds-size_2-of-2"></div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <span>{labels.amountContributed}</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <span class="slds-float_right">
+                            <lightning-formatted-number
+                                format-style="currency"
+                                value={cart.amountContributed}
+                                maximum-fraction-digits="2"
+                            ></lightning-formatted-number>
+                        </span>
+                    </div>
+                </template>
+                <template if:true={showRemainingAmountToBeContributed}>
+                    <div class="slds-col slds-size_1-of-2">
+                        <span>{labels.remainingAmount}</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <span class="slds-float_right">
+                            <lightning-formatted-number
+                                format-style="currency"
+                                value={cart.remainingAmount}
+                                maximum-fraction-digits="2"
+                            ></lightning-formatted-number>
+                        </span>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </div>
+</template>

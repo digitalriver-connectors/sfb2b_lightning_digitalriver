@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Duty__c</fullName>
+    <description>Indicates the total amount of duty levied by the importing country for this Line Item.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the total amount of duty levied by the importing country for this Line Item.</inlineHelpText>
+    <label>DR Duty</label>
+    <summarizedField>CartTax.DR_Duty__c</summarizedField>
+    <summaryForeignKey>CartTax.CartItemId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <type>Summary</type>
+</CustomField>

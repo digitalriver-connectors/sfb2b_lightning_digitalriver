@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Landed_Cost__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When true, indicates the Cart has Landed Costs associated with it. When false, indicates that the Cart does not have Landed Costs.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When true, indicates the Cart has Landed Costs associated with it. When false, indicates that the Cart does not have Landed Costs.</inlineHelpText>
+    <label>Has Landed Cost</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

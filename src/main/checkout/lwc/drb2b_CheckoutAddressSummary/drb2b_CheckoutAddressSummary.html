@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-grid_align-center">
+        <div class="dr-buyer-info">
+            <span class="dr-buyer-info_label">Buyer Information</span>
+            <span class="dr-buyer-info_details">{cart.values.Buyer_Name__c} {cart.values.Buyer_Phone__c} {cart.values.Buyer_Email__c}</span>
+        </div>
+        <div class="dr-cart-billing-info">
+            <span class="dr-cart-billing-info_label">Billing Address</span>
+            <span class="dr-cart-billing-info_buyer_name">{cart.values.Buyer_Name__c}</span>
+            <span class="dr-cart-billing-info_address">
+                <span class="dr-cart-billing-info_address-street">{cart.values.BillingStreet}, {cart.values.BillingPostalCode} {cart.values.BillingCity}</span>
+                <span class="dr-cart-billing-info_address-state">{cart.values.BillingState} {cart.values.BillingPostalCode}</span>
+                <span class="dr-cart-billing-info_address-country">{cart.values.BillingCountry} </span>
+            </span>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+		<apiVersion>54.0</apiVersion>
+		<isExposed>true</isExposed>  
+		<masterLabel>drb2b_addressDetails</masterLabel>
+		<targets>
+			<target>lightningCommunity__Page</target>
+			<target>lightningCommunity__Default</target>
+			<target>lightning__FlowScreen</target>
+
+		</targets>
+		<targetConfigs>
+			<targetConfig targets="lightningCommunity__Default">
+				<property
+                name="recordId"
+                type="String"
+                label="Record Id"
+                description="Automatically bind the page's record id to the component variable"
+                default="{!recordId}"
+            />
+				<property name="showShippingAddress" type="Boolean" label="Show Shipping Address" default="true" />
+		   </targetConfig>
+		  <targetConfig targets="lightning__FlowScreen">
+		  		<property
+                name="recordId"
+                type="String"
+                label="Record Id"
+                description="Automatically bind the page's record id to the component variable"
+            />
+				  <property name="showShippingAddress" type="Boolean" label="Show Shipping Address" default="true" role="inputOnly" />
+		  </targetConfig>
+		</targetConfigs>
+
+	</LightningComponentBundle>

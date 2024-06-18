@@ -1,0 +1,824 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef1"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "4323.310_B",
+            "digitalriverv3__DR_Tax_Group__c": "Software (Downloadable & Physical)",
+            "digitalriverv3__DR_Tax_Type__c": "Backup Media (CD/DVD) - One Disc per Order"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef2"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "81112106",
+            "digitalriverv3__DR_Tax_Group__c": "Software (Downloadable & Physical)",
+            "digitalriverv3__DR_Tax_Type__c": "Software as a Service"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef3"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "4323.310_E",
+            "digitalriverv3__DR_Tax_Group__c": "Software (Downloadable & Physical)",
+            "digitalriverv3__DR_Tax_Type__c": "Physical Software (Gaming Only)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef4"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "4323.310_A",
+            "digitalriverv3__DR_Tax_Group__c": "Software (Downloadable & Physical)",
+            "digitalriverv3__DR_Tax_Type__c": "Physical Software (Non-Gaming)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef5"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "4323.310_D",
+            "digitalriverv3__DR_Tax_Group__c": "Software (Downloadable & Physical)",
+            "digitalriverv3__DR_Tax_Type__c": "Physical Media Kits"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef6"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "4323.310_C",
+            "digitalriverv3__DR_Tax_Group__c": "Software (Downloadable & Physical)",
+            "digitalriverv3__DR_Tax_Type__c": "Backup Media (CD/DVD) - One Disc per Product"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef7"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "4323.320_C",
+            "digitalriverv3__DR_Tax_Group__c": "Software (Downloadable & Physical)",
+            "digitalriverv3__DR_Tax_Type__c": "Downloadable Media Kits"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef8"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "4323.320_D",
+            "digitalriverv3__DR_Tax_Group__c": "Software (Downloadable & Physical)",
+            "digitalriverv3__DR_Tax_Type__c": "Downloadable Software (Gaming Only)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef9"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "4323.320_A",
+            "digitalriverv3__DR_Tax_Group__c": "Software (Downloadable & Physical)",
+            "digitalriverv3__DR_Tax_Type__c": "Downloadable Software (Non-Gaming Includes Software Subscriptions)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef10"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "4323.320_B",
+            "digitalriverv3__DR_Tax_Group__c": "Software (Downloadable & Physical)",
+            "digitalriverv3__DR_Tax_Type__c": "Extended Download Service"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef11"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "95.210",
+            "digitalriverv3__DR_Tax_Group__c": "Warranties",
+            "digitalriverv3__DR_Tax_Type__c": "Optional Warranties - Purchased at Time of Sale of for Consumer Goods Labor Only"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef12"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "95.222",
+            "digitalriverv3__DR_Tax_Group__c": "Warranties",
+            "digitalriverv3__DR_Tax_Type__c": "Optional Warranties - NOT Purchased at Time of Sale of for Consumer Goods Parts & Labor"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef13"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "95.220",
+            "digitalriverv3__DR_Tax_Group__c": "Warranties",
+            "digitalriverv3__DR_Tax_Type__c": "Optional Warranties - NOT Purchased at Time of Sale of for Consumer Goods Labor Only"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef14"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "95.100",
+            "digitalriverv3__DR_Tax_Group__c": "Warranties",
+            "digitalriverv3__DR_Tax_Type__c": "Mandatory Warranties"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef15"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "95.212",
+            "digitalriverv3__DR_Tax_Group__c": "Warranties",
+            "digitalriverv3__DR_Tax_Type__c": "Optional Warranties - Purchased at Time of Sale of for Consumer Goods Parts & Labor"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef16"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "4512.100",
+            "digitalriverv3__DR_Tax_Group__c": "Downloadable Goods (Non-Software)",
+            "digitalriverv3__DR_Tax_Type__c": "Digital Image"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef17"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "55111509.12",
+            "digitalriverv3__DR_Tax_Group__c": "Downloadable Goods (Non-Software)",
+            "digitalriverv3__DR_Tax_Type__c": "Virtual Goods"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef18"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "55111512.100",
+            "digitalriverv3__DR_Tax_Group__c": "Downloadable Goods (Non-Software)",
+            "digitalriverv3__DR_Tax_Type__c": "Music"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef19"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "55111507.120",
+            "digitalriverv3__DR_Tax_Group__c": "Downloadable Goods (Non-Software)",
+            "digitalriverv3__DR_Tax_Type__c": "Electronic Newspapers (Includes Subscriptions)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef20"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "55111506.120",
+            "digitalriverv3__DR_Tax_Group__c": "Downloadable Goods (Non-Software)",
+            "digitalriverv3__DR_Tax_Type__c": "Electronic Magazines (Includes Subscriptions)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef21"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "55111513.120",
+            "digitalriverv3__DR_Tax_Group__c": "Downloadable Goods (Non-Software)",
+            "digitalriverv3__DR_Tax_Type__c": "Educational / Vocational Texts"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef22"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "47",
+            "digitalriverv3__DR_Tax_Group__c": "Food, Beverage & Household",
+            "digitalriverv3__DR_Tax_Type__c": "Miscellaneous Supplies"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef23"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "50",
+            "digitalriverv3__DR_Tax_Group__c": "Food, Beverage & Household",
+            "digitalriverv3__DR_Tax_Type__c": "Food - General"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef24"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "531316.150",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Automatic Blood Pressure Monitors"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef25"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "52141545.100",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Energy Star - Stove"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef26"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "4010.200",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Energy Star - Dehumidifier"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef27"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "4010.100",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Energy Star - Air Conditioner"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef28"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "40101609.100",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Energy Star - Ceiling Fan"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef29"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "39101629.100",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Energy Star - Light Bulbs"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef30"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "52141506.100",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Energy Star - Freezer"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef31"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "52141501.100",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Energy Star - Refrigerator"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef32"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "52141601.100",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Energy Star - Washer"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef33"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "52141602.100",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Energy Star - Dryer"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef34"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "52141505.100",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Energy Star - Dishwasher"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef35"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "4321_S",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Computer Supplies - Subscription"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef36"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "43211509",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Mobile Devices"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef37"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "42",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Medical Equipment"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef38"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "4512",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Consumer Electronics (Photographic Filming or Video Equipment)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef39"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "55111502.120",
+            "digitalriverv3__DR_Tax_Group__c": "Downloadable Goods (Non-Software)",
+            "digitalriverv3__DR_Tax_Type__c": "eBooks"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef40"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "51191905",
+            "digitalriverv3__DR_Tax_Group__c": "Food, Beverage & Household",
+            "digitalriverv3__DR_Tax_Type__c": "Non-Prescription Vitamins"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef41"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "5124",
+            "digitalriverv3__DR_Tax_Group__c": "Food, Beverage & Household",
+            "digitalriverv3__DR_Tax_Type__c": "Non-Prescription Drugs"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef42"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "52161500_C",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Consumer Electronics (T.V. Monitor Display) - Size (>4\"<15\")"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef43"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "52161500_B",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Consumer Electronics (T.V. Monitor Display) - Size (= or >35\")"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef44"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "52161500_A",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Consumer Electronics (T.V. Monitor Display) - Size (= or >15\"<35\")"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef45"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "601410",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Video Game Consoles and Accessories"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef46"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "461815.100",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Safety Clothing (Not Suitable for Everyday Use)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef47"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "5510",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Printed Media (Non-Subscription)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef48"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "55101504.100",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Newspapers (Includes Subscription)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef49"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "55101506.100",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Magazines (Includes Subscriptions)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef50"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "601410",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "General Merchandise"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef51"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "5216",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Consumer Electronics (Non-Computer)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef52"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "4321_A",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Computers"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef53"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "4321_C",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Computer Supplies"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef54"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "531027",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Uniforms"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef55"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "49",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Sports and Recreation Equipment"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef56"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "441216",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "School Supplies"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef57"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "6010",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "School Instructional Materials"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef58"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "4321_B",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Computer Peripheral Devices"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef59"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "55101510",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Books - General Purpose"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef60"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "55101509",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Books - Educational and Vocational Texts"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef61"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "53121603",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Backpacks"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef62"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "531029.200",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Apparel & Footwear (Athletic Use)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef63"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "70.360",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Installation Service Charges Provided by the Seller of TPP"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef64"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "81112201.121",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Mandatory Maintenance Agreements - Services and Upgrades Only for Downloadable"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef65"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "8111",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Computer Services"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef66"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "70.60",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Consulting Services"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef67"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "70.100",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "General Services"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef68"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "70.120",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Gift Cards"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef69"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "81112201.120",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Mandatory Maintenance Agreements - Services and Upgrades for Downloadable and Physical Products"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef70"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "70.150",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Non-warranty Repairs"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef71"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "811121",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Online Data Storage"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef72"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "81112201.420",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Optional Maintenance Agreements - Services and Upgrades for Downloadable Products"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef73"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "81112201.410",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Optional Maintenance Agreements - Services and Upgrades for Physical Products"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef74"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "81112201.200",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Optional Maintenance Agreements - Services Only for Downloadable and Physical Products"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef75"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "70.300",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Seminar Classes"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef76"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Physical",
+            "digitalriverv3__DR_Tax_Code__c": "531029.100",
+            "digitalriverv3__DR_Tax_Group__c": "Physical Goods",
+            "digitalriverv3__DR_Tax_Type__c": "Apparel & Footwear (Everyday Use)"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef77"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "70.280",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Software Training"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef78"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "811118.100",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Technical Support"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef79"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "70.120_A",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Virtual Currency"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef80"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "70.220",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Membership Dues - General"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef81"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "70.222",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Membership Dues & Professional Organization"
+        },
+        {
+            "attributes": {
+                "type": "digitalriverv3__Digital_River_Tax_Mapping__c",
+                "referenceId": "digitalriverv3__Digital_River_Tax_Mapping__cRef82"
+            },
+            "digitalriverv3__DR_Product_Type__c": "Digital",
+            "digitalriverv3__DR_Tax_Code__c": "81112105",
+            "digitalriverv3__DR_Tax_Group__c": "Services & Miscellaneous",
+            "digitalriverv3__DR_Tax_Type__c": "Web Hosting"
+        }
+    ]
+}

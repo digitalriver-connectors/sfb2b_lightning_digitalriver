@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recurring_Line_Item_Count__c</fullName>
+    <description>Indicates the Number of Recurring Line Items in this Order</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the Number of Recurring Line Items in this Order</inlineHelpText>
+    <label>Recurring Line Item Count</label>
+    <summaryFilterItems>
+        <field>OrderItem.Recurring_Line_Item__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

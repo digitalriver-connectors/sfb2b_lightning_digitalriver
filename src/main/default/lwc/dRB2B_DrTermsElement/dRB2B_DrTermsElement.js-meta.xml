@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+  <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>drb2b_drTermsElement</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightning__FlowScreen</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+          <property name="header"
+           type="String" 
+           default="compliance" 
+           label="Heading"/>
+           
+           <property
+            name="recordId"
+            type="String"
+            label="Record Id"
+            description="Automatically bind the page's record id to the component variable"
+            default="{!recordId}" />
+
+          <property
+            name="objectApiName"
+            type="String"
+            label="Object Name"
+            description="Automatically bind the page's object name to the component variable"
+            default="{!objectApiName}" />        
+        </targetConfig>
+
+        <targetConfig targets="lightning__FlowScreen">          
+           <property
+            name="webcartId" 
+            type="String" 
+            label="Cart Id" 
+            role="inputOnly" />
+
+            <property
+            name="bypassValidation" 
+            type="Boolean" 
+            label="Bypass Validation" 
+            role="inputOnly" />
+
+            <property
+            name="hideTermsUI" 
+            type="Boolean" 
+            label="Hide Terms UI" 
+            default="false"
+            role="inputOnly" />
+
+            <property
+            name="autoInitialize" 
+            type="Boolean" 
+            label="Auto Initialize" 
+            default="true"
+            role="inputOnly" />
+
+        </targetConfig>
+        
+  </targetConfigs>
+</LightningComponentBundle>

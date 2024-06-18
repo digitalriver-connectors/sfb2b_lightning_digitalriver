@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_TAXGROUP__c</fullName>
+    <externalId>false</externalId>
+    <label>DR TAXGROUP *</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Downloadable Goods (Non-Software)</fullName>
+                <default>false</default>
+                <label>Downloadable Goods (Non-Software)</label>
+            </value>
+            <value>
+                <fullName>Food, Beverage &amp; Household</fullName>
+                <default>false</default>
+                <label>Food, Beverage &amp; Household</label>
+            </value>
+            <value>
+                <fullName>Physical Goods</fullName>
+                <default>false</default>
+                <label>Physical Goods</label>
+            </value>
+            <value>
+                <fullName>Services &amp; Miscellaneous</fullName>
+                <default>false</default>
+                <label>Services &amp; Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Software (Downloadable &amp; Physical)</fullName>
+                <default>false</default>
+                <label>Software (Downloadable &amp; Physical)</label>
+            </value>
+            <value>
+                <fullName>Warranties</fullName>
+                <default>false</default>
+                <label>Warranties</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cart__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>References the cart this payment was applied to.</description>
+    <externalId>false</externalId>
+    <label>Cart</label>
+    <referenceTo>WebCart</referenceTo>
+    <relationshipLabel>Digital River Transaction Payments</relationshipLabel>
+    <relationshipName>Digital_River_Transaction_Payments</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

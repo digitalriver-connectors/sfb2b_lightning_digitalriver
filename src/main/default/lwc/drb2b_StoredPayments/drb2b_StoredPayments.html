@@ -1,0 +1,24 @@
+<template>
+    <div style="height: 300px">
+        <!-- Loader -->
+        <div if:true={isLoading} class="slds-is-relative slds-m-top_xx-large">
+            <lightning-spinner alternative-text="Loading..." variant="brand" size="medium"> </lightning-spinner>
+        </div>
+
+        <!-- Loader -->
+        <lightning-datatable data={data} columns={_columns} key-field="id" onrowaction={handleRowAction} hide-checkbox-column> </lightning-datatable>
+    </div>
+    <c-drb2b-modal size="small">
+        <div slot="header"></div>
+
+        <div slot="body">
+            <p>{label.confirmDeletion}</p>
+        </div>
+
+        <div slot="footer">
+            <lightning-button label={label.cancelBtn} onclick={handleCancel}></lightning-button>
+            <lightning-button class="slds-m-left_medium" label={label.confirmBtn} variant="destructive" onclick={handleConfirm}></lightning-button>
+        </div>
+    </c-drb2b-modal>
+    <div class="slds-hide">{contactInfo}</div>
+</template>

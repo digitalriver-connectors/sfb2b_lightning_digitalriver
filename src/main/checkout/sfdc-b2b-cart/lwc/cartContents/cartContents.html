@@ -1,0 +1,13 @@
+<template>
+    <!-- Cart Header-->
+    <header class="slds-p-bottom_small">
+        <h1 class="slds-text-heading_medium cart-header">{cartHeader}</h1>
+    </header>
+
+    <!-- Active Cart with Cart Items -->
+    <template if:false={isCartClosed}>
+        <c-cart-items cart-items={cartItems} currency-code={currencyCode} onquantitychanged={handleQuantityChanged} onsinglecartitemdelete={handleCartItemDelete} is-cart-disabled={isCartDisabled}>
+        </c-cart-items>
+        <lightning-spinner if:true={isCartItemListIndeterminate} class="slds-is-relative slds-align_absolute-center slds-m-around_large" variant="brand"> </lightning-spinner>
+    </template>
+</template>

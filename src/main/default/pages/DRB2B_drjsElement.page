@@ -1,0 +1,683 @@
+<!--
+  @description       : 
+  @author            : Devanshu Sood
+  @group             : 
+  @last modified on  : 04-16-2021
+  @last modified by  : Devanshu Sood
+  Modifications Log 
+  Ver   Date         Author          Modification
+  1.0   03-25-2021   Devanshu Sood   Initial Version
+-->
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" controller="DRB2B_DrElementController">
+    <apex:includeScript value="{!HTMLENCODE(drJsStaticResourceRelativePath)}" />
+    <apex:includeScript value="{!$Resource.jQuery}" />
+    <apex:stylesheet value="{!HTMLENCODE(drCSStaticResourceRelativePath)}" />
+    <apex:stylesheet value="{!HTMLENCODE(clientCSStaticResourceRelativePath)}" />
+
+    <apex:slds />
+
+    <script>
+        let digitalriver;
+        let validTaxId = {};
+        let userLocale = "{!HTMLENCODE(getUserLocale)}";
+        let entity = "{!HTMLENCODE(getDefaultEntity)}";
+        let guestipAddress = "{!HTMLENCODE(getGuestIPAddress)}";
+        let taxIdentifier;
+        let tempTaxIds = {};
+        let taxIdCheckoutflow = false;
+        var selectedSourceId;
+        //function will initilize DR element
+        function InitilizeJS() {
+            digitalriver = new DigitalRiver("{!HTMLENCODE(getpublicKey)}", {
+                locale: userLocale
+            });
+        }
+        window.addEventListener("message", function (event) {
+            var url = window.location.protocol + "//" + window.location.hostname;
+            if (event.origin != url) {
+                return false;
+            }
+            let msg = typeof event.data === "string" ? JSON.parse(event.data) : event.data;
+            switch (msg.event) {
+                case "GetIPAddress":
+                    firePostMessage("GetIPAddress", guestipAddress);
+
+                case "taxId": // for tax idetifier Element
+                    InitilizeTaxIdentifier(msg.data);
+                    break;
+                case "terms": // for terms and condition
+                    InitilizeTerms(msg.data);
+                    break;
+                case "compliance":
+                    InitilizeComplaince(msg.data);
+                    break;
+                case "mywallet":
+                    initilizeMyWalletDropin(msg.data);
+                    break;
+                case "error":
+                    formatErrorMessage(msg.data);
+                    break;
+                case "dropIn":
+                    initilizeDropin(msg.data);
+                    break;
+                case "verifySCAEvent":
+                    verifySCA(msg.data);
+                    break;
+                case "userError":
+                    formatUserErrorMessage(msg.data);
+                    break;
+                case "savedCard":
+                    savedCardsList(msg.data);
+                    break;
+                case "wireTransfer":
+                    getWireTransferInstructions(msg.data);
+                    break;
+                case "offlineRefundForm":
+                    initilizeOfflineRefundForm(msg.data);
+                    break;
+            }
+        });
+
+        function initilizeDropin(data) {
+            let buyerName = data.cart.buyerName.split(" ");
+            let firstName = buyerName[0];
+            let lastName = buyerName[buyerName.length - 1];
+            InitilizeJS();
+            let configuration = {
+                sessionId: data.cart.paymentSession,
+                options: {
+                    flow: "checkout",
+                    showComplianceSection: false,
+                    showSavePaymentAgreement: !data.disableSavedPayemnts ? true : false,
+                    showTermsOfSaleDisclosure: false
+                },
+                onSuccess: function (data) {
+                    firePostMessage("dropInSuccess", data);
+                },
+                onError: function (data) {
+                    firePostMessage("dropInError", data);
+                },
+                onReady: function (data) {
+                    firePostMessage("dropInReady", data);
+                },
+                onCancel: function (data) {
+                    firePostMessage("dropInCancel", data);
+                }
+            };
+
+            if (data.dropinConfig) {
+                let dropinattr = JSON.parse(data.dropinConfig);
+                for (let key in dropinattr) {
+                    assign(configuration, key.split("."), dropinattr[key]);
+                }
+            }
+
+            if (data.cart.isRecurring) configuration.options.usage = "subscription";
+
+            //Override payments logic
+            if (data?.enabledPaymentMethods) {
+                configuration.paymentMethodConfiguration = { enabledPaymentMethods: data?.enabledPaymentMethods };
+            } else if (data?.disabledPaymentMethods) {
+                configuration.paymentMethodConfiguration = { disabledPaymentMethods: data?.disabledPaymentMethods };
+            }
+
+            document.getElementById("drop-in-container").innerHTML = "";
+            let dropin = digitalriver.createDropin(configuration);
+            dropin.mount("drop-in-container");
+        }
+
+        //this funtion will be used to add keys dynamically in object
+        function assign(obj, keyPath, value) {
+            lastKeyIndex = keyPath.length - 1;
+            for (var i = 0; i < lastKeyIndex; ++i) {
+                key = keyPath[i];
+                if (!(key in obj)) {
+                    obj[key] = {};
+                }
+                obj = obj[key];
+            }
+            obj[keyPath[lastKeyIndex]] = value;
+        }
+
+        function InitilizeComplaince(data) {
+            InitilizeJS();
+            if (data && "cartEntity" in data && "entity" in data.cartEntity) {
+                entity = data.cartEntity.entity;
+            }
+
+            var complianceOptions = {};
+            if (
+                data &&
+                "cartType" in data &&
+                data.cartType != "Digital" &&
+                "cartshipToCountry" in data &&
+                data.cartshipToCountry != "" &&
+                data.cartshipToCountry != undefined
+            ) {
+                complianceOptions = {
+                    classes: {
+                        base: "DRElement"
+                    },
+                    compliance: {
+                        businessEntityCode: entity,
+                        language: "cartLanguage" in data ? data.cartLanguage : undefined,
+                        country: data.cartshipToCountry
+                    }
+                };
+            } else if (
+                data &&
+                "cartType" in data &&
+                data.cartType == "Digital" &&
+                "cartBillToCountry" in data &&
+                data.cartBillToCountry != "" &&
+                data.cartBillToCountry != undefined
+            ) {
+                complianceOptions = {
+                    classes: {
+                        base: "DRElement"
+                    },
+                    compliance: {
+                        businessEntityCode: entity,
+                        language: "cartLanguage" in data ? data.cartLanguage : undefined,
+                        country: data.cartBillToCountry
+                    }
+                };
+            } else {
+                complianceOptions = {
+                    classes: {
+                        base: "DRElement"
+                    },
+                    compliance: {
+                        locale: userLocale,
+                        businessEntityCode: entity
+                    }
+                };
+            }
+            var compliance = digitalriver.createElement("compliance", complianceOptions);
+            compliance.mount("DR-Complaince");
+        }
+
+        function InitilizeTerms(data) {
+            InitilizeJS();
+            /* if (data && "entity" in data) {
+                businessEntityCode = data.entity;
+            }
+            let drComplianceDetail = digitalriver.Compliance.getDetails(entity, userLocale); */
+            let config = {};
+            if (
+                data &&
+                "cartType" in data &&
+                data.cartType != "Digital" &&
+                "cartshipToCountry" in data &&
+                data.cartshipToCountry != "" &&
+                data.cartshipToCountry != undefined
+            ) {
+                config = {
+                    businessEntityCode:
+                        "cartEntity" in data && "entity" in data.cartEntity ? data.cartEntity.entity : undefined,
+                    language: "cartLanguage" in data ? data.cartLanguage : undefined,
+                    country: data.cartshipToCountry
+                };
+            } else if (
+                data &&
+                "cartType" in data &&
+                data.cartType == "Digital" &&
+                "cartBillToCountry" in data &&
+                data.cartBillToCountry != "" &&
+                data.cartBillToCountry != undefined
+            ) {
+                config = {
+                    businessEntityCode:
+                        "cartEntity" in data && "entity" in data.cartEntity ? data.cartEntity.entity : undefined,
+                    language: "cartLanguage" in data ? data.cartLanguage : undefined,
+                    country: data.cartBillToCountry
+                };
+            } else {
+                config = {
+                    locale: "userLocale" in data ? data.userLocale : undefined,
+                    businessEntityCode:
+                        "cartEntity" in data && "entity" in data.cartEntity ? data.cartEntity.entity : undefined
+                };
+            }
+            let drComplianceDetail = digitalriver.Compliance.getDetails(config);
+            firePostMessage("DRterms", drComplianceDetail);
+        }
+        /***************TAX IDENTIFER FLOW START**************************/
+        function InitilizeTaxIdentifier(countryCode) {
+            tempTaxIdentifier = {};
+            tempTaxIds = {};
+            validTaxId = {};
+            $("#savebtn").hide();
+            if (taxIdentifier) {
+                taxIdentifier.destroy();
+            }
+            InitilizeJS();
+            let options = {
+                classes: {
+                    base: "DRElement",
+                    complete: "taxId-complete",
+                    empty: "taxId-empty",
+                    focus: "taxId-focus"
+                },
+                style: {
+                    base: {
+                        color: "#495057",
+                        height: "35px",
+                        fontSize: "1rem",
+                        fontFamily: "apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif"
+                    },
+                    complete: {
+                        color: "green",
+                        ":-webkit-autofill": {
+                            color: "green"
+                        }
+                    }
+                },
+                taxIdentifier: {
+                    //  "country": countryCode.code
+                }
+            };
+            if ("code" in countryCode) {
+                options.taxIdentifier.country = countryCode.code;
+            } else {
+                taxIdCheckoutflow = true;
+                $("#savebtn").html("{!$Label.DR_Apply_TaxId}");
+                $("#savebtn").removeAttr("style");
+                //options.taxIdentifier.country = 'DE';
+                options.taxIdentifier.sessionId = countryCode.session;
+                options.taxIdentifier.type = countryCode.customerType;
+            }
+            taxIdentifier = digitalriver.createElement("taxidentifier", options);
+            taxIdentifier.mount("tax-id-container");
+            taxIdentifier.on("ready", function (event) {
+                if (!event.hasTaxIdentifier) {
+                    if (taxIdCheckoutflow) firePostMessage("notApplicableCheckout", "");
+                    else firePostMessage("notApplicable", "");
+                } else {
+                    $("#savebtn").show();
+                    firePostMessage("hideLoader", "");
+                    $("#savebtn").attr("disabled", true);
+                }
+                initialRadoChangeEvent();
+            });
+
+            taxIdentifier.on("change", function (event) {
+                tempTaxIds[event.identifier.type] = event.identifier.value;
+                if (event.identifier.value == "") delete tempTaxIds[event.identifier.type];
+                if (!event.error && event.complete) validTaxId[event.identifier.type] = event.identifier;
+                else delete validTaxId[event.identifier.type];
+                if (
+                    Object.keys(validTaxId).length == $(".DR-field-label:visible").length ||
+                    (Object.keys(validTaxId).length == Object.keys(tempTaxIds).length &&
+                        Object.keys(validTaxId).length != 0)
+                )
+                    $("#savebtn").attr("disabled", false);
+                else $("#savebtn").attr("disabled", true);
+                if (event.identifier.value == "" && Object.keys(validTaxId).length > 0)
+                    $("#savebtn").attr("disabled", false);
+            });
+        }
+
+        //Onchange of radio buttons in dropin For shopperType
+        function initialRadoChangeEvent() {
+            let tempTaxIdentifier = {}; // holding previoulsyfirePostMessage
+            let isBtnDisabledMap = {};
+            let selected = $('input[name="shopperType"]:checked').val();
+            $('input[type=radio][name="shopperType"]').change(function () {
+                tempTaxIds = {};
+                tempTaxIdentifier[selected] = validTaxId;
+                isBtnDisabledMap[selected] = $("#savebtn").is(":disabled");
+                selected = $("input[name=shopperType]:checked").val();
+                if (selected in tempTaxIdentifier) {
+                    validTaxId = tempTaxIdentifier[selected];
+                    if (isBtnDisabledMap[selected]) $("#savebtn").attr("disabled", true);
+                    else $("#savebtn").attr("disabled", false);
+                } else {
+                    validTaxId = {};
+                    $("#savebtn").attr("disabled", true);
+                }
+            });
+        }
+
+        function saveTaxIdentifier() {
+            if (!validTaxId) return;
+            if (taxIdCheckoutflow) firePostMessage("taxidCheckout", validTaxId);
+            else firePostMessage("taxid", validTaxId);
+        }
+        /*******************TAX IDENTIFER FLOW END**********************************/
+
+        function firePostMessage(eventname, data) {
+            let datObj = {};
+            datObj.event = eventname;
+            datObj.obj = data;
+            window.parent.postMessage(JSON.stringify(datObj), "/");
+        }
+        function formatErrorMessage(data) {
+            var parsedValues = JSON.parse(data);
+            var finalLabel = parsedValues.label.replace("{ }", parsedValues.message);
+            firePostMessage("ErrorMessage", finalLabel);
+        }
+
+        function formatUserErrorMessage(data) {
+            var parsedValues = JSON.parse(data);
+            var finalLabel = parsedValues.label.replace("{ }", parsedValues.message);
+            finalLabel = finalLabel.replace("{ }", parsedValues.message);
+            firePostMessage("UserErrorMessage", finalLabel);
+        }
+
+        function initilizeMyWalletDropin(cData) {
+            InitilizeJS();
+            var parsedValues = JSON.parse(cData);
+            document.getElementById("drop-in").innerHTML = "";
+            try {
+                const configuration = {
+                    options: {
+                        flow: "managePaymentMethods",
+                        type: "payNow",
+                        showComplianceSection: false
+                    },
+                    billingAddress: {
+                        firstName: parsedValues.firstName,
+                        lastName: parsedValues.lastName,
+                        email: parsedValues.email,
+                        phoneNumber: parsedValues.phone,
+                        address: {
+                            line1: parsedValues.contactaddress.Street,
+                            city: parsedValues.contactaddress.City,
+                            state:
+                                "StateCode" in parsedValues.contactaddress
+                                    ? parsedValues.contactaddress.StateCode
+                                    : parsedValues.contactaddress.State,
+                            postalCode: parsedValues.contactaddress.PostalCode,
+                            country:
+                                "CountryCode" in parsedValues.contactaddress
+                                    ? parsedValues.contactaddress.CountryCode
+                                    : parsedValues.countryIsoCode
+                        }
+                    },
+                    onSuccess: function (data) {
+                        firePostMessage("myWalletSuccess", data);
+                    },
+                    onCancel: function (data) {
+                        firePostMessage("myWalletCancel", data);
+                    },
+                    onError: function (data) {
+                        firePostMessage("myWalletError", data);
+                    },
+                    onReady: function (data) {
+                        document.getElementById("drop-in").style.display = "block";
+                        firePostMessage("myWalletOnReady", data);
+                    },
+                    requestShipping: false
+                };
+                let dropin = digitalriver.createDropin(configuration);
+                dropin.mount("drop-in");
+            } catch (e) {
+                console.log("e-->" + JSON.stringify(e));
+            }
+        }
+        function verifySCA(data) {
+            InitilizeJS();
+            var parsedValues = JSON.parse(data);
+            try {
+                digitalriver
+                    .authenticateSource({
+                        sessionId: parsedValues.paymentSessionId,
+                        sourceId: parsedValues.sourceInfo.id,
+                        sourceClientSecret: parsedValues.sourceInfo.clientSecret
+                    })
+                    .then(function (data) {
+                        if (
+                            (data.status !== undefined && data.status === "complete") ||
+                            (data.status !== undefined && data.status === "authentication_not_required")
+                        ) {
+                            firePostMessage("proceedToPayment", data);
+                        } else if (data.status === undefined || data.status === "failed") {
+                            firePostMessage("sourceAuthError", data);
+                        }
+                    });
+            } catch (error) {
+                console.log("\n\n error => " + JSON.stringify(error, null, 2));
+            }
+        }
+        function savedCardsList(data) {
+            InitilizeJS();
+            $("#storeCards").removeClass("slds-hide");
+            var parsedValues = JSON.parse(data);
+            var storePaymentHtml = "";
+            storePaymentHtml += '<fieldset class="slds-form-element">';
+            storePaymentHtml +=
+                '<legend class="slds-form-element__legend slds-form-element__label">{!HTMLENCODE($Label.DR_My_Wallet_Use_Save_Payments)}</legend>';
+            if (parsedValues.savedcardList.length > 0) {
+                parsedValues.savedcardList.forEach((savedCard) => {
+                    parsedValues.paymentsToDisplay.forEach((drPaymentsType) => {
+                        if (savedCard.state != "cancelled") {
+                            if (drPaymentsType === savedCard.type) {
+                                if (savedCard.type === "creditCard") {
+                                    var creditCardValues = savedCard.creditCard;
+                                    storePaymentHtml += '<div class="slds-form-element__control">';
+                                    storePaymentHtml += '<span class="slds-radio">';
+                                    storePaymentHtml +=
+                                        '<input type="radio" id="radio-' +
+                                        savedCard.id +
+                                        '" value="' +
+                                        savedCard.id +
+                                        '" name="storePayment" />';
+                                    storePaymentHtml +=
+                                        '<label class="slds-radio__label" for="radio-' + savedCard.id + '">';
+                                    storePaymentHtml += '<span class="slds-radio_faux"></span>';
+                                    storePaymentHtml +=
+                                        '<span class="slds-form-element__label">' +
+                                        creditCardValues.brand +
+                                        " {!HTMLENCODE($Label.DR_Card_Ending_with)} " +
+                                        creditCardValues.lastFourDigits;
+                                    storePaymentHtml += "</span>";
+                                    storePaymentHtml += "</label>";
+                                    storePaymentHtml += "</span>";
+                                } else {
+                                    storePaymentHtml += '<div class="slds-form-element__control">';
+                                    storePaymentHtml += '<span class="slds-radio">';
+                                    storePaymentHtml +=
+                                        '<input type="radio" id="radio-' +
+                                        savedCard.id +
+                                        '" value="' +
+                                        savedCard.id +
+                                        '" name="storePayment" />';
+                                    storePaymentHtml +=
+                                        '<label class="slds-radio__label" for="radio-' + savedCard.id + '">';
+                                    storePaymentHtml += '<span class="slds-radio_faux"></span>';
+                                    storePaymentHtml += '<span class="slds-form-element__label">' + savedCard.type;
+                                    storePaymentHtml += "</span>";
+                                    storePaymentHtml += "</label>";
+                                    storePaymentHtml += "</span>";
+                                }
+                            }
+                        }
+                    });
+                });
+                $("#useStorePayment").prop("disabled", false);
+                storePaymentHtml += "</div>";
+            } else {
+                storePaymentHtml =
+                    '<div class="slds-text-align_center slds-m-around_large ">{!HTMLENCODE($Label.DR_No_Saved_Payment_Found)}</div>';
+                $("#useStorePayment").prop("disabled", true);
+            }
+            $(storePaymentHtml).insertBefore("#useStorePayment");
+            initialButtonChangeEvent();
+        }
+        //Onchange of radio buttons in for Store Payments
+        function initialButtonChangeEvent() {
+            $('input[type=radio][name="storePayment"]').change(function () {
+                selectedSourceId = $("input[name=storePayment]:checked").val();
+            });
+        }
+        function handleUseStorePayment() {
+            firePostMessage("savedCardDetails", selectedSourceId);
+        }
+        function getWireTransferInstructions(data) {
+            InitilizeJS();
+            var parsedValues = JSON.parse(data);
+            try {
+                let options = { sourceId: parsedValues.sourceId, sourceClientSecret: parsedValues.sourceClientSecret };
+                let delayedPaymentInstructions = digitalriver.createElement("delayedpaymentinstructions", options);
+                delayedPaymentInstructions.mount("delayed-payment-container");
+
+                delayedPaymentInstructions.on("ready", function (data) {
+                    showReady(data);
+                });
+            } catch (e) {
+                console.log("e-->" + JSON.stringify(e));
+            }
+        }
+        function showReady(data) {
+            document.getElementById("delayed-payment-container").style.display = "block";
+            firePostMessage("wireTransferInstru", data);
+        }
+        function initilizeOfflineRefundForm(data) {
+            InitilizeJS();
+            var offlineOptions = {
+                classes: {
+                    base: "DRElement",
+                    complete: "offline-refund-form-complete",
+                    invalid: "offline-refund-form-invalid"
+                },
+                style: {
+                    base: {
+                        color: "#495057",
+                        height: "35px",
+                        fontSize: "1rem",
+                        fontFamily: "apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif",
+                        fontWeight: "lighter",
+                        ":hover": {
+                            color: "#ccc"
+                        },
+                        "::placeholder": {
+                            color: "#495057"
+                        }
+                    },
+                    focus: {
+                        ":hover": {
+                            color: "#495057"
+                        }
+                    },
+                    empty: {
+                        ":hover": {
+                            color: "#495057"
+                        }
+                    },
+                    complete: {
+                        ":hover": {
+                            color: "#495057"
+                        }
+                    }
+                },
+                refundToken: data.code
+            };
+            let offlineRefund = digitalriver.createElement("offlinerefund", offlineOptions);
+            if (data.code == "unmountRefundForm") {
+                document.getElementById("offline-refund-form").innerHTML = "";
+            } else {
+                document.getElementById("offline-refund-form").innerHTML = "";
+                offlineRefund.mount("offline-refund-form");
+                document.getElementById("offline-refund-form").style.display = "block";
+                firePostMessage("successMountRefund", "");
+                offlineRefund.on("change", function (event) {
+                    if (event.complete) {
+                        firePostMessage("refundFormSubmitted", true);
+                    }
+                });
+            }
+        }
+    </script>
+    <div class="slds-scope">
+        <div id="tax-id-container"></div>
+        <button
+            class="slds-button slds-button_outline-brand"
+            disabled="true"
+            style="float: right; display: none; margin-right: 16px"
+            id="savebtn"
+            onclick="saveTaxIdentifier()"
+        >
+            Save
+        </button>
+    </div>
+    <div id="drop-in-container"></div>
+    <div id="offline-refund-form"></div>
+    <div id="DR-Complaince"></div>
+    <div id="drop-in"></div>
+    <div id="storeCards" class="slds-hide">
+        <h3 slot="title">{!HTMLENCODE($Label.DR_My_Wallet)}</h3>
+        <button
+            id="useStorePayment"
+            onClick="handleUseStorePayment()"
+            class="slds-button slds-button_neutral slds-m-top_small slds-m-right_medium slds-float_right"
+            disabled=""
+        >
+            {!HTMLENCODE($Label.DR_User_Store_Payment)}
+        </button>
+    </div>
+    <div id="delayed-payment-container" class="slds-m-left_large slds-m-top_medium slds-m-bottom_medium"></div>
+    <style>
+        .DR-field-parent.taxId-complete {
+            border: 1px solid green;
+            border-radius: 3px;
+            background-color: #d4f1d4;
+        }
+
+        .taxId-complete::before {
+            content: "✔";
+            color: green;
+            font-weight: bold;
+            float: left;
+            display: block;
+            margin-left: -2em;
+            position: absolute;
+            padding: 0.3em 0.5em;
+            animation: grow 0.5s;
+        }
+
+        @keyframes grow {
+            0% {
+                transform: scale(0, 0);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+
+        .DRElementUpdated {
+            border: 3px solid #ddd !important;
+        }
+
+        /* overrides */
+
+        .DR-title {
+            color: #135cee;
+            margin-bottom: 0px;
+            margin-top: 5px;
+        }
+
+        .DR-field-label,
+        .DR-shopper-type {
+            color: #075591;
+            font-weight: bold;
+        }
+
+        .DR-field-label::after {
+            content: ":";
+        }
+
+        .DR-flex-row {
+            flex-direction: column;
+        }
+
+        #tax-id-container .DR-title {
+            display: none !important;
+        }
+
+        .DR-button-text {
+            color: white !important;
+        }
+    </style>
+</apex:page>

@@ -1,0 +1,80 @@
+<template>
+    <div if:true={isShow}>
+        <!-- Loader -->
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+        </template>
+        <!-- Loader -->
+
+        <div if:true={currentUser}>
+            <lightning-input
+                type="text"
+                label={labels.nameLabel}
+                data-id="buyerName"
+                required
+                value={currentUser.Name.value}
+                class="input"
+            ></lightning-input>
+
+            <lightning-input
+                type="email"
+                label={labels.emailLabel}
+                data-id="buyerEmail"
+                required
+                value={currentUser.Email.value}
+                class="input"
+            ></lightning-input>
+
+            <lightning-input
+                type="tel"
+                label={labels.phoneLabel}
+                data-id="buyerPhone"
+                required
+                value={currentUser.Phone.value}
+                class="input"
+            ></lightning-input>
+
+            <lightning-combobox
+                name="billTo"
+                required
+                label={labels.billtoLabel}
+                value={selectedBillingValue}
+                options={billingAddresses}
+                onchange={handleAddressChange}
+                class="input"
+            ></lightning-combobox>
+            <div if:true={showShippingAddress}>
+                <lightning-combobox
+                    name="shipTo"
+                    required
+                    label={labels.shiptoLabel}
+                    value={selectedShippingValue}
+                    options={shippingAddresses}
+                    onchange={handleAddressChange}
+                    class="input"
+                ></lightning-combobox>
+            </div>
+
+            <lightning-radio-group
+                name="purchaseType"
+                required
+                label="Purchase Type"
+                options={purchaseTypeOption}
+                value={selectedPurchaseType}
+                type="button"
+                onchange={handlePurchaseTypeChange}
+                class="input"
+            ></lightning-radio-group>
+            <template if:true={isVisibleOrganizationName}> 
+                <lightning-input  
+                    variant="Neutral"
+                    data-id="organizationName" 
+                    required
+                    label="Organization Name"
+                    value={organizationName}
+                    class="input"
+                ></lightning-input>
+            </template> 
+        </div>
+    </div>
+</template>

@@ -1,0 +1,12 @@
+{
+    "Username": "buyer@scratch.org",
+    "LastName": "CreatedViaQuickstart",
+    "FirstName": "FirstName",
+    "Email": "youremail@domain.com",
+    "Alias": "buyer",
+    "TimeZoneSidKey": "America/Denver",
+    "LocaleSidKey": "en_US",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "en_US",
+    "profileName": "Buyer_User_Profile_From_QuickStart"
+}

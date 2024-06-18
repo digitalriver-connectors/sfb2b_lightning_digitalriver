@@ -1,0 +1,18 @@
+
+List<Product2> product2List = [Select id, name, digitalriverv3__DR_SKU_Group__c from product2 limit 10000];
+Integer i = 0;
+for(Product2 product : product2List){
+	if(i < 5){
+		product.digitalriverv3__DR_SKU_Group__c = 'SFB2B-coffee-3';
+	}else if(i >5 && i < 10){
+		product.digitalriverv3__DR_SKU_Group__c = 'SFB2B-coffee-2';
+	}else if(i >10 && i < 15){
+		product.digitalriverv3__DR_SKU_Group__c = 'SFB2B-coffee-4';
+	}else if(i >15 && i < 25){
+		product.digitalriverv3__DR_SKU_Group__c = 'SFB2B-coffee-5';
+	}else{
+		product.digitalriverv3__DR_SKU_Group__c = 'laptops';
+	}
+	i++;
+}
+update product2List;

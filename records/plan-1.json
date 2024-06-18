@@ -1,0 +1,14 @@
+[
+    {
+        "sobject": "digitalriverv3__Digital_River_Tax_Mapping__c",
+        "saveRefs": false,
+        "resolveRefs": false,
+        "files": ["Digital_River_Tax_Mapping__c.json"]
+    },
+    {
+        "sobject": "digitalriverv3__DR_ECCN_Lookup__c",
+        "saveRefs": false,
+        "resolveRefs": false,
+        "files": ["DR_ECCN_Lookup__c.json"]
+    }
+]

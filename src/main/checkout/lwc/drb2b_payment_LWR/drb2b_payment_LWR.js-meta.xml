@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>drb2b_payments_LWR</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+                <property name="publishZeroDollarEvent" type="String" label="Deprecated -Fire Zero Dollar Event" default="false"/>
+                <property name="publishZeroDollarEventBoolean" type="Boolean" label="Fire Zero Dollar Event" default="false"/>
+                <property name="dropinConfig" type="String" label="Dropin Config" />
+                <property name="disableSavedPayemnts" type="Boolean" label="Disable Saved Payments" default="false" />
+                <property
+                name="enableOverridePayments"
+                type="Boolean"
+                label="Enable override payments"
+                default="false"
+            />
+        </targetConfig>
+    </targetConfigs>
+    <capabilities>
+    <capability>lightningCommunity__RelaxedCSP</capability>
+    </capabilities>
+</LightningComponentBundle>

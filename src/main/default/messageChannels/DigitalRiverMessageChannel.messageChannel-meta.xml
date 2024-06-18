@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>DigitalRiverMessageChannel</masterLabel>
+    <isExposed>true</isExposed>
+    <description>This is genric message channel </description>
+    <lightningMessageFields>
+        <fieldName>purpose</fieldName>
+        <description>This will contain event/namePurpose.</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>payload</fieldName>
+        <description>This will contains payload.</description>
+    </lightningMessageFields>
+</LightningMessageChannel>

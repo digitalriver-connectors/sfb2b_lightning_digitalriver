@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>DigitalRiver Lightning B2B Connector Webhook Configuration</description>
+    <label>DR Webhook Configuration</label>
+    <pluralLabel>DR Webhook Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

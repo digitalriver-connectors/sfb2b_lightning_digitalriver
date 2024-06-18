@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>TaxCertificateMessageChannel</masterLabel>
+    <isExposed>true</isExposed>
+    <description>This message service will be used to communicate between buyer info component and tax certificate </description>
+    <lightningMessageFields>
+        <fieldName>showLink</fieldName>
+        <description>This will be used to identify if manage tax certificate should be diplayed or not as per selected courntry and purchase type</description>
+    </lightningMessageFields>
+</LightningMessageChannel>

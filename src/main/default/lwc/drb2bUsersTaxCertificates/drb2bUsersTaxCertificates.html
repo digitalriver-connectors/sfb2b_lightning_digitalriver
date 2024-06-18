@@ -1,0 +1,38 @@
+<template>
+
+    <div>
+
+        <lightning-card title={labels.myTaxCertificatesTtl} if:true={componentInited}>
+            <div slot="actions">
+                <lightning-button label={labels.manageTaxExemptionLbl}
+                                  onclick={showNewCertificateTaxModal}
+                ></lightning-button>
+            </div>
+
+
+            <lightning-datatable if:true={hasCertificates}
+                                 data={data}
+                                 columns={columns}
+                                 key-field="id"
+                                 hide-checkbox-column
+            >
+            </lightning-datatable>
+
+            <div if:true={doesNotHaveCertificates}
+                 class="slds-text-align_center slds-m-around_large">{labels.userDoesntHasTaxCertificatesMsg}</div>
+
+        </lightning-card>
+
+        <div if:true={showSpinner} class="slds-spinner_inline spinner-padding">
+            <lightning-spinner variant="brand"
+                               alternative-text="Loading Cases"
+                               size="medium">
+            </lightning-spinner>
+        </div>
+
+    </div>
+
+    <c-drb2b-add-tax-certificate onsuccess={refresh}>
+    </c-drb2b-add-tax-certificate>
+
+</template>

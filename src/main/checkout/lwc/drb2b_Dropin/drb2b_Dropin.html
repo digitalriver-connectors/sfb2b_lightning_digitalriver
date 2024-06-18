@@ -1,0 +1,7 @@
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+    </template>
+    <iframe src={communityURL} class="iframe-Class" onload={iframeLoaded}></iframe>
+    <c-drb2b_country-picklist class="slds-hide"></c-drb2b_country-picklist>
+</template>

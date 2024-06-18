@@ -1,0 +1,7 @@
+<template>
+    <div class="slds-text-heading_small">Event Publisher</div>
+    <lightning-input type="text" label="Purpose"  value ={puposevalue} class="purpose"></lightning-input>
+    <lightning-textarea name="payload" value={payloadValue} label="Payload" class="payload"></lightning-textarea>
+    <lightning-button label="Publish Event" title="Publish Event" onclick={handlePublishEvent} class="slds-m-left_x-small"></lightning-button>
+
+</template>

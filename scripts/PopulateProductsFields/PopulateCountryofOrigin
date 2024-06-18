@@ -1,0 +1,10 @@
+List<Product2> productsList = [SELECT Id, Name, IsActive, ProductCode, digitalriverv3__DR_ECCN__c, digitalriverv3__DR_TAXGROUP__c, digitalriverv3__DR_TAXTYPE__c, digitalriverv3__DR_Product_Country_Origin__c, digitalriverv3__Date_Last_Synced_to_DR__c, digitalriverv3__Sync_Product_to_DR__c, Type, ProductClass FROM Product2];
+Integer i = 0;
+for(Product2 pr : productsList){
+	if(i< 25){
+		pr.digitalriverv3__DR_Product_Country_Origin__c = 'US';
+	}else{
+		pr.digitalriverv3__DR_Product_Country_Origin__c = 'GB';
+	}
+}
+update productsList;

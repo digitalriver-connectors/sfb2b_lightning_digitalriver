@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>drb2b_payments</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property
+                name="webCartId"
+                type="String"
+                label="Record Id"
+                description="Automatically bind the page's record id to the component variable"
+            />
+                <property
+                name="publishZeroDollarEvent"
+                type="String"
+                label="Fire Zero Dollar Event"
+                role="inputOnly"
+                default="false"
+            />
+                <property name="dropinConfig" type="String" label="Dropin Config" role="inputOnly" />
+                <property name="paymentType" type="String" label="Payment Type" role="outputOnly" />
+                 <property name="paymentInfo" type="String" label="Payment Detail" role="outputOnly" />
+                <property name="disableSavedPayemnts" type="Boolean" label="Disable Saved Payments" default="false" />
+                <property name="isSyncCheckout" type="Boolean" label="Is Synchronus checkout" default="false" />
+                <property name="skipCurrentPage" type="Boolean" label="skip current page" default="false" />
+                <property
+                name="enableOverridePayments"
+                type="Boolean"
+                label="Enable override payments"
+                default="false"
+                role="inputOnly"
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

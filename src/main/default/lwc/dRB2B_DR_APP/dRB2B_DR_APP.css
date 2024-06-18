@@ -1,0 +1,11 @@
+/* :host {
+    --sds-c-tabs-item-color-border-active: #FF906E;
+    
+    --sds-c-tabs-list-color-border:red;
+
+    
+--sds-c-tabs-item-color-border-hover:green;
+  } */
+  .loader{
+    display: flex;justify-content: center;
+}

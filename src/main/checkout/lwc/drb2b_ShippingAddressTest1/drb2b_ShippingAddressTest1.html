@@ -1,0 +1,16 @@
+<template>
+    <!-- Loader -->
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+    </template>
+    <!-- Loader -->
+
+    <lightning-input
+        type="text"
+        label={labels.shiptoLabel}
+        data-id="shipTo"
+        required
+        value=""
+        class="input"
+    ></lightning-input>
+</template>

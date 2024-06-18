@@ -1,0 +1,18 @@
+<template>
+    
+    <div >
+        <!-- Loader -->
+        <div if:true={isLoading} class="slds-is-relative slds-m-top_medium">
+            <lightning-spinner alternative-text="Loading..." variant="brand" size="medium"> </lightning-spinner>
+        </div>
+        <!-- Loader -->
+        <template if:true={displayPaymentInstructions}>
+            <lightning-card >
+                <div class="slds-m-bottom_small slds-m-left_medium">
+                    <span class="slds-text-heading_medium">{label.wiretransferInformation}</span> 
+                </div>
+                <iframe src={communityURL} class="iframe-Class" style="width: 100%; height: 490px" frameborder="0" onload={iframeLoaded}></iframe>
+            </lightning-card>
+        </template>
+    </div>
+</template>

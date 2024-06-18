@@ -1,0 +1,78 @@
+<template >
+    <template if:true={showCustomerCreditMocker}>
+        <fieldset class="slds-form-element slds-form-element_compound slds-form-element_address">
+            <div class="slds-form-element__control">
+              <div class="slds-form-element__row">
+                <div class="slds-size_1-of-2">
+                  <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="amount">Amount</label>
+                    <div class="slds-form-element__control">
+                        <lightning-input  class="slds-m-bottom_medium" data-id="amount" value={amount}></lightning-input>
+                    </div>
+                  </div>
+                </div>
+                <div class="slds-size_1-of-2">
+                  <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="input-01"></label>
+                    <div class="slds-form-element__control">
+                        <lightning-button class="slds-form-element slds-form-element_horizontal slds-button slds-m-top_medium" label="Add" variant="brand" onclick={handleAddCustomerCredit}></lightning-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <template if:true={createPill}>
+                <div class="slds-form-element__row">
+                    <div class="slds-size_1-of-1">
+                        <div class="slds-form-element">
+                            <div class="slds-form-element__control slds-m-bottom_large">
+                                <template for:each={pillData} for:item="pill">
+                                    <div key={pill.id} class="slds-m-top_small">
+                                    <lightning-pill
+                                        label={pill.value}
+                                        key={pill.id}
+                                        name={pill.id}
+                                        onremove={handleRemoveCustomerCredit}
+                                        class="ccPills"
+                                    ></lightning-pill></div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            </div>
+          </fieldset>
+    </template>
+
+    
+    <!-- <div class="slds-grid">
+
+        <div class="slds-form-element">
+            <label class="slds-form-element__label" for="amount">Amount</label>
+            <div class="slds-form__row">
+                <div class="slds-form__item" role="listitem">
+                    <div class="slds-col slds-size_10-of-12 slds-form-element slds-form-element_horizontal slds-form-element__control">
+                        <lightning-input  data-id="amount" value={amount}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12 slds-form-element slds-form-element_horizontal slds-form-element__control">
+                        <lightning-button class="slds-form-element slds-form-element_horizontal slds-button" label="Add" variant="brand" onclick={handleAddCustomerCredit}></lightning-button>
+                    </div>
+                </div>
+            </div>
+            <template if:true={createPill}>
+                <div class="slds-form__row ">
+                    <div class="slds-form__item" role="listitem">
+                        <div class="slds-col slds-form-element slds-form-element_horizontal slds-form-element__control">
+                            <lightning-pill
+                                    label={pillValue}
+                                    key={pillId}
+                                    name={pillId}
+                                    onremove={handleRemoveCustomerCredit}
+                                ></lightning-pill>
+                        </div>
+                    </div>
+                </div>
+            </template>
+          </div>
+    </div> -->
+</template>

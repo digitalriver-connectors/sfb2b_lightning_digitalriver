@@ -1,0 +1,13 @@
+<template>
+    <template if:true={countryPicklist.data}>
+        <lightning-combobox
+            name={labels.DR_Country}
+            label={labels.DR_Country}
+            placeholder={labels.DR_Select_Country_placeholder}
+            value={value}
+            options={countryPicklist.data.values}
+            onchange={handleChange}
+        >
+        </lightning-combobox>
+    </template>
+</template>

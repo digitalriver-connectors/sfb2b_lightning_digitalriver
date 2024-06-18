@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>drb2b_checkoutSummary_LWR</masterLabel>
+     <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+
+  <targetConfigs>
+    <targetConfig targets="lightningCommunity__Default">
+          <property name="isDutyEnabled" type="Boolean" label="Show Duty" default="true" />
+
+            <property name="isShippingEnabled" type="Boolean" label="Show Shipping" default="true" />
+
+            <property name="isFeeEnabled" type="Boolean" label="Show Regulatory Fee" default="true" />
+
+            <property name="isTaxEnabled" type="Boolean" label="Show Tax" default="true" />
+
+            <property name="isIOREnabled" type="Boolean" label="Show IOR tax" default="true" />
+
+            <property name="isGrandTotalEnabled" type="Boolean" label="Show Grand Total" default="true" />
+
+            <property name="isSubtotalEnabled" type="Boolean" label="Show sub Total" default="true" />
+
+            <property name="isShowAll" type="Boolean" label="Show All" default="true" />
+
+            <property name="showAmountContributed" type="Boolean" label="Show Amount Contributed" default="false" />
+          
+            <property name="showRemainingAmount" type="Boolean" label="Show Remaining Amount" default="false" />
+
+            <property name="showPromotion" type="Boolean" label="Show Promotion" default="true" />
+      </targetConfig>
+
+  </targetConfigs>
+
+  <capabilities>
+    <capability>lightningCommunity__RelaxedCSP</capability>
+  </capabilities>
+  
+</LightningComponentBundle>

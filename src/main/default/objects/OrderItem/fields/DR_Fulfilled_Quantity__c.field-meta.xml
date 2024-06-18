@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Fulfilled_Quantity__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Fulfilled Line Item Quantity</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Fulfilled Line Item Quantity</inlineHelpText>
+    <label>DR Fulfilled Quantity</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,83 @@
+﻿TaxGroup,TaxType,DRTaxCode,ProductType
+Downloadable Goods (Non-Software),Digital Image,4512.100,Digital
+Downloadable Goods (Non-Software),Virtual Goods,55111509.12,Digital
+Downloadable Goods (Non-Software),Music,55111512.100,Digital
+Downloadable Goods (Non-Software),Electronic Newspapers (Includes Subscriptions),"55111507.120",Digital
+Downloadable Goods (Non-Software),Electronic Magazines (Includes Subscriptions),55111506.120,Digital
+Downloadable Goods (Non-Software),Educational / Vocational Texts,55111513.120,Digital
+Downloadable Goods (Non-Software),eBooks,55111502.120,Digital
+"Food, Beverage & Household",Non-Prescription Vitamins,51191905,Physical
+"Food, Beverage & Household",Non-Prescription Drugs,5124,Physical
+"Food, Beverage & Household",Miscellaneous Supplies,47,Physical
+"Food, Beverage & Household",Food - General,50,Physical
+Physical Goods,Automatic Blood Pressure Monitors,531316.150,Physical
+Physical Goods,Energy Star - Stove,52141545.100,Physical
+Physical Goods,Energy Star - Dehumidifier,4010.200,Physical
+Physical Goods,Energy Star - Air Conditioner,4010.100,Physical
+Physical Goods,Energy Star - Ceiling Fan,40101609.100,Physical
+Physical Goods,Energy Star - Light Bulbs,39101629.100,Physical
+Physical Goods,Energy Star - Freezer,52141506.100,Physical
+Physical Goods,Energy Star - Refrigerator,52141501.100,Physical
+Physical Goods,Energy Star - Washer,52141601.100,Physical
+Physical Goods,Energy Star - Dryer,52141602.100,Physical
+Physical Goods,Energy Star - Dishwasher,52141505.100,Physical
+Physical Goods,Computer Supplies - Subscription,4321_S,Physical
+Physical Goods,Mobile Devices,43211509,Physical
+Physical Goods,Medical Equipment,42,Physical
+Physical Goods,Consumer Electronics (Photographic Filming or Video Equipment),4512,Physical
+Physical Goods,"Consumer Electronics (T.V. Monitor Display) - Size (>4""<15"")",52161500_C,Physical
+Physical Goods,"Consumer Electronics (T.V. Monitor Display) - Size (= or >35"")",52161500_B,Physical
+Physical Goods,"Consumer Electronics (T.V. Monitor Display) - Size (= or >15""<35"")",52161500_A,Physical
+Physical Goods,Video Game Consoles and Accessories,601410,Physical
+Physical Goods,Uniforms,531027,Physical
+Physical Goods,Sports and Recreation Equipment,49,Physical
+Physical Goods,School Supplies,441216,Physical
+Physical Goods,School Instructional Materials,6010,Physical
+Physical Goods,Safety Clothing (Not Suitable for Everyday Use),461815.100,Physical
+Physical Goods,Printed Media (Non-Subscription),5510,Physical
+Physical Goods,Newspapers (Includes Subscription),55101504.100,Physical
+Physical Goods,Magazines (Includes Subscriptions),55101506.100,Physical
+Physical Goods,General Merchandise,601410,Physical
+Physical Goods,Consumer Electronics (Non-Computer),5216,Physical
+Physical Goods,Computers,4321_A,Physical
+Physical Goods,Computer Supplies,4321_C,Physical
+Physical Goods,Computer Peripheral Devices,4321_B,Physical
+Physical Goods,Books - General Purpose,55101510,Physical
+Physical Goods,Books - Educational and Vocational Texts,55101509,Physical
+Physical Goods,Backpacks,53121603,Physical
+Physical Goods,Apparel & Footwear (Everyday Use),531029.100,Physical
+Physical Goods,Apparel & Footwear (Athletic Use),531029.200,Physical
+Services & Miscellaneous,Installation Service Charges Provided by the Seller of TPP,70.360,Digital
+Services & Miscellaneous,Mandatory Maintenance Agreements - Services and Upgrades Only for Downloadable,81112201.121,Digital
+Services & Miscellaneous,Computer Services,8111,Digital
+Services & Miscellaneous,Consulting Services,70.60,Digital
+Services & Miscellaneous,General Services,70.100,Digital
+Services & Miscellaneous,Gift Cards,70.120,Digital
+Services & Miscellaneous,Mandatory Maintenance Agreements - Services and Upgrades for Downloadable and Physical Products,81112201.120,Digital
+Services & Miscellaneous,Non-warranty Repairs,70.150,Digital
+Services & Miscellaneous,Online Data Storage,811121,Digital
+Services & Miscellaneous,Optional Maintenance Agreements - Services and Upgrades for Downloadable Products,81112201.420,Digital
+Services & Miscellaneous,Optional Maintenance Agreements - Services and Upgrades for Physical Products,81112201.410,Digital
+Services & Miscellaneous,Optional Maintenance Agreements - Services Only for Downloadable and Physical Products,81112201.200,Digital
+Services & Miscellaneous,Seminar Classes,70.300,Digital
+Services & Miscellaneous,Software Training,70.280,Digital
+Services & Miscellaneous,Technical Support,811118.100,Digital
+Services & Miscellaneous,Virtual Currency,70.120_A,Digital
+Services & Miscellaneous,Membership Dues - General,70.220,Digital
+Services & Miscellaneous,Membership Dues & Professional Organization,70.222,Digital
+Services & Miscellaneous,Web Hosting,81112105,Digital
+Software (Downloadable & Physical),Backup Media (CD/DVD) - One Disc per Order,4323.310_B,Physical
+Software (Downloadable & Physical),Software as a Service,81112106,Digital
+Software (Downloadable & Physical),Physical Software (Gaming Only),4323.310_E,Physical
+Software (Downloadable & Physical),Physical Software (Non-Gaming),4323.310_A,Physical
+Software (Downloadable & Physical),Physical Media Kits,4323.310_D,Physical
+Software (Downloadable & Physical),Backup Media (CD/DVD) - One Disc per Product,4323.310_C,Physical
+Software (Downloadable & Physical),Downloadable Media Kits,4323.320_C,Digital
+Software (Downloadable & Physical),Downloadable Software (Gaming Only),4323.320_D,Digital
+Software (Downloadable & Physical),Downloadable Software (Non-Gaming Includes Software Subscriptions),4323.320_A,Digital
+Software (Downloadable & Physical),Extended Download Service,4323.320_B,Digital
+Warranties,Optional Warranties - Purchased at Time of Sale of for Consumer Goods Labor Only,95.210,Digital
+Warranties,Optional Warranties - NOT Purchased at Time of Sale of for Consumer Goods Parts & Labor,95.222,Digital
+Warranties,Optional Warranties - NOT Purchased at Time of Sale of for Consumer Goods Labor Only,95.220,Digital
+Warranties,Mandatory Warranties,95.100,Digital
+Warranties,Optional Warranties - Purchased at Time of Sale of for Consumer Goods Parts & Labor,95.212,Digital

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>placeOrderButtonMessageChannel</masterLabel>
+    <isExposed>true</isExposed>
+    <description>This will be used to show place order button </description>
+    <lightningMessageFields>
+        <fieldName>showButton</fieldName>
+        <description>This will be used to identify whether to show place order button</description>
+    </lightningMessageFields>
+</LightningMessageChannel>

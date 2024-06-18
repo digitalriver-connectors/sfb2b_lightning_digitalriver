@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Num_Of_Line_Item_Records_To_Process__c</fullName>
+    <description>Count of Child Line Item Fulfillment Records available for Fulfillment or Cancellation i.e., Fulfillment Order Item Status is Open or Reprocess</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Count of Child Line Item Fulfillment Records available for Fulfillment or Cancellation i.e., Fulfillment Order Item Status is Open or Reprocess</inlineHelpText>
+    <label>Number Of Line Item Records To Process</label>
+    <summaryFilterItems>
+        <field>DR_Line_Item_Fulfillment__c.Fulfillment_OrderItem_Status__c</field>
+        <operation>contains</operation>
+        <value>Open, Reprocess</value>
+    </summaryFilterItems>
+    <summaryForeignKey>DR_Line_Item_Fulfillment__c.DR_Order_Fulfillment__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

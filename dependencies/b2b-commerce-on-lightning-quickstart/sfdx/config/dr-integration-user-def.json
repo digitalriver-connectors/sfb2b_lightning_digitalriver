@@ -1,0 +1,13 @@
+{
+    "Username": "drintegration@fulfillment.com",
+    "FirstName": "Digital",
+    "LastName": "River",
+    "Email": "integrations@digitalriver.com",
+    "Alias": "drive",
+    "TimeZoneSidKey": "America/Denver",
+    "LocaleSidKey": "en_US",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "en_US",
+    "profileName": "Digital River Integration User",
+    "generatePassword": true
+}

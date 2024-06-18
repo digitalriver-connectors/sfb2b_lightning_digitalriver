@@ -1,0 +1,62 @@
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+    </template>
+    <lightning-card title={label.DR_Tax_Identifiers}>
+        <div slot="actions">
+            <lightning-button
+                label={label.DR_New_Tax_ID_Label}
+                icon-name="utility:add"
+                class="slds-m-left_x-small"
+                onclick={handleAddNewTaxId}
+            ></lightning-button>
+        </div>
+
+        <template if:true={showTaxSection}>
+            <div class="slds-text-body_regular slds-box slds-m-around_small">
+                <lightning-button-icon
+                    icon-name="utility:close"
+                    alternative-text="close"
+                    title="close"
+                    onclick={handleCloseTaxSection}
+                    class="slds-float_right"
+                ></lightning-button-icon>
+                <div class="picklist">
+                    <c-drb2b_country-picklist onselected={handleCountryChange}></c-drb2b_country-picklist>
+                </div>
+                <p>{label.taxIdDisclaimer}</p>
+
+                <div class="slds-m-around_large">
+                    <iframe src={communityURL} class="iframe-Class slds-p-around_small"> </iframe>
+                </div>
+            </div>
+        </template>
+        <template if:true={taxData}>
+            <lightning-datatable
+                key-field="id"
+                data={taxData}
+                onrowaction={handleRowAction}
+                hide-checkbox-column="true"
+                columns={tableColumns}
+            >
+            </lightning-datatable>
+        </template>
+        <div if:false={taxData} class="slds-text-align_center slds-m-around_large">{label.noSavedTaxId}</div>
+    </lightning-card>
+    <c-drb2b-modal size="small">
+        <div slot="header"></div>
+
+        <div slot="body">
+            <p>{label.confirmDeletion}</p>
+        </div>
+
+        <div slot="footer">
+            <lightning-button
+                label={label.DR_Cancel}
+                onclick={handleCancel}
+                class="slds-m-horizontal_small"
+            ></lightning-button>
+            <lightning-button label={label.DR_Confirm} variant="destructive" onclick={handleConfirm}></lightning-button>
+        </div>
+    </c-drb2b-modal>
+</template>

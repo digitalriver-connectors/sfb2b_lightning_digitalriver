@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_TAXTYPE__c</fullName>
+    <externalId>false</externalId>
+    <label>DR TAXTYPE *</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>DR_TAXGROUP__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>DR_TAXTYPES</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Downloadable Goods (Non-Software)</controllingFieldValue>
+            <valueName>Digital Image</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Downloadable Goods (Non-Software)</controllingFieldValue>
+            <valueName>Virtual Goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Downloadable Goods (Non-Software)</controllingFieldValue>
+            <valueName>Music</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Downloadable Goods (Non-Software)</controllingFieldValue>
+            <valueName>Electronic Newspapers (Includes Subscriptions)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Downloadable Goods (Non-Software)</controllingFieldValue>
+            <valueName>Electronic Magazines (Includes Subscriptions)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Downloadable Goods (Non-Software)</controllingFieldValue>
+            <valueName>Educational / Vocational Texts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Downloadable Goods (Non-Software)</controllingFieldValue>
+            <valueName>eBooks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food, Beverage &amp; Household</controllingFieldValue>
+            <valueName>Non-Prescription Vitamins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food, Beverage &amp; Household</controllingFieldValue>
+            <valueName>Non-Prescription Drugs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food, Beverage &amp; Household</controllingFieldValue>
+            <valueName>Miscellaneous Supplies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food, Beverage &amp; Household</controllingFieldValue>
+            <valueName>Food - General</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Automatic Blood Pressure Monitors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Energy Star - Stove</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Energy Star - Dehumidifier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Energy Star - Air Conditioner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Energy Star - Ceiling Fan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Energy Star - Light Bulbs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Energy Star - Freezer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Energy Star - Refrigerator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Energy Star - Washer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Energy Star - Dryer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Energy Star - Dishwasher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Computer Supplies - Subscription</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Mobile Devices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Medical Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Consumer Electronics (Photographic Filming or Video Equipment)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Consumer Electronics (T.V. Monitor Display) - Size (&gt;4&quot;&lt;15&quot;)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Consumer Electronics (T.V. Monitor Display) - Size (= or &gt;35&quot;)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Consumer Electronics (T.V. Monitor Display) - Size (= or &gt;15&quot;&lt;35&quot;)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Video Game Consoles and Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Uniforms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Sports and Recreation Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>School Supplies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>School Instructional Materials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Safety Clothing (Not Suitable for Everyday Use)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Printed Media (Non-Subscription)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Newspapers (Includes Subscription)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Magazines (Includes Subscriptions)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>General Merchandise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Consumer Electronics (Non-Computer)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Computers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Computer Supplies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Computer Peripheral Devices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Books - General Purpose</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Books - Educational and Vocational Texts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Backpacks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Apparel &amp; Footwear (Everyday Use)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Physical Goods</controllingFieldValue>
+            <valueName>Apparel &amp; Footwear (Athletic Use)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Installation Service Charges Provided by the Seller of TPP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Mandatory Maintenance Agreements - Services and Upgrades Only for Downloadable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Computer Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Consulting Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>General Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Gift Cards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Mandatory Maintenance Agreements - Services and Upgrades for Downloadable and Physical Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Non-warranty Repairs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Online Data Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Optional Maintenance Agreements - Services and Upgrades for Downloadable Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Optional Maintenance Agreements - Services and Upgrades for Physical Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Optional Maintenance Agreements - Services Only for Downloadable and Physical Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Seminar Classes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Software Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Technical Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Virtual Currency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Membership Dues - General</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Membership Dues &amp; Professional Organization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services &amp; Miscellaneous</controllingFieldValue>
+            <valueName>Web Hosting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Software (Downloadable &amp; Physical)</controllingFieldValue>
+            <valueName>Backup Media (CD/DVD) - One Disc per Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Software (Downloadable &amp; Physical)</controllingFieldValue>
+            <valueName>Software as a Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Software (Downloadable &amp; Physical)</controllingFieldValue>
+            <valueName>Physical Software (Gaming Only)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Software (Downloadable &amp; Physical)</controllingFieldValue>
+            <valueName>Physical Software (Non-Gaming)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Software (Downloadable &amp; Physical)</controllingFieldValue>
+            <valueName>Physical Media Kits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Software (Downloadable &amp; Physical)</controllingFieldValue>
+            <valueName>Backup Media (CD/DVD) - One Disc per Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Software (Downloadable &amp; Physical)</controllingFieldValue>
+            <valueName>Downloadable Media Kits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Software (Downloadable &amp; Physical)</controllingFieldValue>
+            <valueName>Downloadable Software (Gaming Only)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Software (Downloadable &amp; Physical)</controllingFieldValue>
+            <valueName>Downloadable Software (Non-Gaming Includes Software Subscriptions)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Software (Downloadable &amp; Physical)</controllingFieldValue>
+            <valueName>Extended Download Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Warranties</controllingFieldValue>
+            <valueName>Optional Warranties - Purchased at Time of Sale of for Consumer Goods Labor Only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Warranties</controllingFieldValue>
+            <valueName>Optional Warranties - NOT Purchased at Time of Sale of for Consumer Goods Parts &amp; Labor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Warranties</controllingFieldValue>
+            <valueName>Optional Warranties - NOT Purchased at Time of Sale of for Consumer Goods Labor Only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Warranties</controllingFieldValue>
+            <valueName>Mandatory Warranties</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Warranties</controllingFieldValue>
+            <valueName>Optional Warranties - Purchased at Time of Sale of for Consumer Goods Parts &amp; Labor</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

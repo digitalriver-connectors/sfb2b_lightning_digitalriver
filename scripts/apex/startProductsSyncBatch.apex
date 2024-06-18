@@ -1,0 +1,1 @@
+Database.executeBatch(new DRB2B_ProductsSyncBatch());

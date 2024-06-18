@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+		<apiVersion>57.0</apiVersion>
+		<isExposed>true</isExposed>  
+		<masterLabel>drb2b_addressDetails_LWR</masterLabel>
+		<targets>
+			<target>lightningCommunity__Page</target>
+			<target>lightningCommunity__Default</target>
+		</targets>		
+		<targetConfigs>
+			<targetConfig targets="lightningCommunity__Default">
+				<property name="showShippingAddress" type="Boolean" label="Show Shipping Address" default="true" />
+				<property name="showBillingAddress" type="Boolean" label="Show Billing Address" default="true" />
+		   </targetConfig>
+		</targetConfigs>
+
+		<capabilities>
+			<capability>lightningCommunity__RelaxedCSP</capability>
+		</capabilities>
+		
+	</LightningComponentBundle>

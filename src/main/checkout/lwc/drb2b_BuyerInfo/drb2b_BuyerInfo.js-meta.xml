@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>drb2b_buyerInfo</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+           
+            <property name="webcartId" type="String" label="Cart Id" role="inputOnly" />
+
+            <property name="enableTaxcertificates" type="Boolean" label="Enable Tax Certificates" role="inputOnly" />
+            <property name="contactPointAddressId" type="String" label="Shpping Address ID" role="outputOnly" />
+            <property
+                name="showShippingAddress"
+                type="Boolean"
+                label="Show Shipping Address"
+                default="true"
+                role="inputOnly"
+            />
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>

@@ -1,0 +1,28 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">My Wallet</h3>
+
+        <template if:true={isSavedPayments}>
+            <div class="slds-m-bottom_medium slds-m-right_large" style="height: 30px">
+                <lightning-button
+                    class="slds-float_right"
+                    variant="Neutral"
+                    label="Add New Payment Method"
+                    onclick={handlePaymentMethodChange}
+                ></lightning-button>
+            </div>
+            <c-drb2b_-stored-payments></c-drb2b_-stored-payments>
+        </template>
+        <template if:false={isSavedPayments}>
+            <div class="slds-m-bottom_medium slds-m-right_large" style="height: 30px">
+                <lightning-button
+                    class="slds-float_right"
+                    variant="Neutral"
+                    label="Cancel"
+                    onclick={handlePaymentMethodChange}
+                ></lightning-button>
+            </div>
+            <c-drb2b_-new-payments onhidenewpayment={renderSavedPaymentComponent}></c-drb2b_-new-payments>
+        </template>
+    </lightning-card>
+</template>

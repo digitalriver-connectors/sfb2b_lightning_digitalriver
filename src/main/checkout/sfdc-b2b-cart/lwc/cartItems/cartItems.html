@@ -1,0 +1,46 @@
+<template>
+    <ul>
+        <template for:each={displayItems} for:item="lineItem">
+            <li key={lineItem.cartItem.cartItemId}>
+                <figure>
+                    <a tabindex="-1" href={lineItem.productUrl} data-productid={lineItem.cartItem.productDetails.productId} onclick={handleProductDetailNavigation}>
+                        <img src={lineItem.productImageUrl} alt={lineItem.productImageAlternativeText} data-productid={lineItem.cartItem.productDetails.productId} />
+                    </a>
+                </figure>
+                <div class="details slds-has-flexi-truncate">
+                    <h5 class="item-name slds-text-heading_medium slds-p-bottom_small slds-truncate" title={lineItem.cartItem.productDetails.name}>
+                        <a href={lineItem.productUrl} data-productid={lineItem.cartItem.productDetails.productId} onclick={handleProductDetailNavigation} tabindex="0">
+                            {lineItem.cartItem.productDetails.name}
+                        </a>
+                    </h5>
+                    <div class="line-item-properties">
+                        <dl class="product-fields">
+                            <dt class="slds-truncate">{labels.sku_no}</dt>
+                            <dd class="slds-truncate" title={lineItem.cartItem.productDetails.sku}>{lineItem.cartItem.productDetails.sku}</dd>
+                            <dt class="slds-truncate">{labels.per_price}</dt>
+                            <dd class="slds-truncate">
+                                <lightning-formatted-number
+                                    format-style="currency"
+                                    currency-code={currencyCode}
+                                    currency-display-as="symbol"
+                                    maximum-fraction-digits="2"
+                                    value={lineItem.cartItem.unitAdjustedPrice}
+                                ></lightning-formatted-number>
+                            </dd>
+                            <dt class="slds-truncate">{labels.total_price}</dt>
+                            <dd class="slds-truncate">
+                                <lightning-formatted-number
+                                    format-style="currency"
+                                    currency-code={currencyCode}
+                                    currency-display-as="symbol"
+                                    maximum-fraction-digits="2"
+                                    value={lineItem.cartItem.totalPrice}
+                                ></lightning-formatted-number>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </li>
+        </template>
+    </ul>
+</template>

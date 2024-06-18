@@ -1,0 +1,41 @@
+List<Product2> productsList = [SELECT Id, Name, IsActive, ProductCode, digitalriverv3__DR_ECCN__c, digitalriverv3__DR_TAXGROUP__c, digitalriverv3__DR_TAXTYPE__c, digitalriverv3__DR_Product_Country_Origin__c, digitalriverv3__Date_Last_Synced_to_DR__c, digitalriverv3__Sync_Product_to_DR__c, Type, ProductClass FROM Product2];
+List<digitalriverv3__Digital_River_Tax_Mapping__c> taxcodeList = [SELECT Id, Name, digitalriverv3__DR_Product_Type__c, digitalriverv3__DR_Tax_Code__c, digitalriverv3__DR_Tax_Type__c, digitalriverv3__DR_Tax_Group__c FROM digitalriverv3__Digital_River_Tax_Mapping__c];
+Integer i = 0;
+Integer j = 0;
+for(Product2 products : productsList){
+	for(digitalriverv3__Digital_River_Tax_Mapping__c taxcode : taxcodeList){
+	   
+			if(i < 5){
+				products.digitalriverv3__DR_TAXGROUP__c = 'Software (Downloadable & Physical)';
+				if(i< 2){
+					products.digitalriverv3__DR_TAXTYPE__c = 'Backup Media (CD/DVD) - One Disc per Order';
+				}else if(i > 2 && i< 5){
+					products.digitalriverv3__DR_TAXTYPE__c = 'Physical Media Kits';
+				}
+			}else if(i > 5 && i < 10){
+				products.digitalriverv3__DR_TAXGROUP__c = 'Services & Miscellaneous';
+				if(i< 8){
+					products.digitalriverv3__DR_TAXTYPE__c = 'Technical Support';
+				}else if(i > 8 && i< 10){
+					products.digitalriverv3__DR_TAXTYPE__c = 'Membership Dues - General';
+                }else{
+                    products.digitalriverv3__DR_TAXTYPE__c = 'Seminar Classes';
+                }
+			}else if( i > 20 && i < 25 ){ 
+				products.digitalriverv3__DR_TAXGROUP__c = 'Software (Downloadable & Physical)';
+				products.digitalriverv3__DR_TAXTYPE__c = 'Physical Media Kits';
+			}else if(i > 25 && i < 30){
+				products.digitalriverv3__DR_TAXGROUP__c = 'Warranties';
+				products.digitalriverv3__DR_TAXTYPE__c = 'Optional Warranties - Purchased at Time of Sale of for Consumer Goods Parts & Labor';
+			}else if(i > 30 ){
+				products.digitalriverv3__DR_TAXGROUP__c = 'Downloadable Goods (Non-Software)';
+				products.digitalriverv3__DR_TAXTYPE__c = 'Virtual Goods';
+            }else{
+                products.digitalriverv3__DR_TAXGROUP__c = 'Physical Goods';
+				products.digitalriverv3__DR_TAXTYPE__c = 'Sports and Recreation Equipment';
+            }
+		   
+	}
+	i++;
+}
+update productsList;

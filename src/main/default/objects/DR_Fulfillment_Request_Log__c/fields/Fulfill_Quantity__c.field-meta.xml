@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fulfill_Quantity__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Specifies Order Item Quantity to Fulfill</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies Order Item Quantity to Fulfill</inlineHelpText>
+    <label>Fulfill Quantity</label>
+    <precision>18</precision>
+    <required>true</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,55 @@
+List<Product2> productsList = [SELECT Id, Name, IsActive, ProductCode, digitalriverv3__DR_ECCN__c, digitalriverv3__DR_TAXGROUP__c, digitalriverv3__DR_TAXTYPE__c, digitalriverv3__DR_Product_Country_Origin__c, digitalriverv3__Date_Last_Synced_to_DR__c, digitalriverv3__Sync_Product_to_DR__c, Type, ProductClass FROM Product2];
+List<String> eencCode = new List<String>{'6E992','EAR99','4E992'};
+List<digitalriverv3__DR_ECCN_Lookup__c> enclis = [SELECT digitalriverv3__DR_Notes__c, digitalriverv3__DR_Description__c,  Name, Id FROM digitalriverv3__DR_ECCN_Lookup__c where Name IN : eencCode];
+Integer i = 0;
+Integer j = 0;
+for(Product2 products : productsList){
+	for(digitalriverv3__DR_ECCN_Lookup__c ecn : enclis){
+		if(i < 5){
+ 	   
+			if(i == 0 && j == 0){
+				products.digitalriverv3__DR_ECCN__c = ecn.Id;
+			}
+			if(i == 1 && j == 1){
+				products.digitalriverv3__DR_ECCN__c = ecn.Id;
+			}
+			if(i == 2 && j < 5){
+				products.digitalriverv3__DR_ECCN__c = ecn.Id;
+			}
+			if(i > 2 && j < 7){
+				products.digitalriverv3__DR_ECCN__c = ecn.Id;
+			}
+			if(i < 5 && j < 5){
+				products.digitalriverv3__DR_ECCN__c = ecn.Id;
+			}
+		}
+		else if(i > 5 && i < 20 && j < 15){
+		   products.digitalriverv3__DR_ECCN__c = ecn.Id;
+			if(i < 8 && j >=15 && j < 85){
+				products.digitalriverv3__DR_ECCN__c = ecn.Id;
+			}
+			if(i < 15 && i > 8 && j >=25 && j < 50){
+				products.digitalriverv3__DR_ECCN__c = ecn.Id;
+			}			
+			if(i > 30 && i < 20){
+				products.digitalriverv3__DR_ECCN__c = ecn.Id;
+			}
+		}else if(i < 20 && i > 15 && j >= 15 && j <= 20){
+				products.digitalriverv3__DR_ECCN__c = ecn.Id;
+		}else{
+			products.digitalriverv3__DR_ECCN__c = ecn.Id;
+		}
+		
+       if(j<39){
+         j++;
+	   }else{
+         j=0;
+	   }
+        
+  }
+    System.debug('j---->'+j);
+    System.debug('i---->'+i);
+    i++;
+    
+}
+update productsList;

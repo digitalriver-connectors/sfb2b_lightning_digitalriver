@@ -1,0 +1,14 @@
+<template>
+    <template if:true={haveFiles}>
+        <div class="slds-grid slds-gutters slds-text-body_regular slds-box slds-m-around_xxx-small">
+            <ul>
+                <li class="slds-text-title_bold slds-m-bottom_x-small">{type}</li>
+                <template for:each={fileIdLink} for:item="link">
+                    <li key={link}>
+                        <p class="slds-text-link" data-id={link} onclick={handleGenrateLink}>{link}</p>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </template>
+</template>

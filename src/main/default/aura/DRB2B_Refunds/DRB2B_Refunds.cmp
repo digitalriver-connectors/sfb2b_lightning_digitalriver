@@ -1,0 +1,8 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="DRB2B_RefundsController">
+	<div class="message">
+		<p >{!$Label.digitalriverv3.DR_Refund_Text}</p> 
+  </div>
+	<div class="marginLeft">
+		<lightning:button variant="brand" label="Proceed" title="Brand" onclick="{! c.handleClick }" />
+	</div>
+<aura:attribute name="recordId" type="String"/> </aura:component>

@@ -1,0 +1,10 @@
+<template>
+    
+    <div class="slds-text-body_regular slds-box slds-m-around_xxx-small">
+        <div if:true={isLoading} class="slds-is-relative slds-m-top_small">
+            <lightning-spinner alternative-text="Loading..." variant="brand" size="small">
+            </lightning-spinner>
+        </div>
+        <iframe src={communityURL} class="iframe-Class" onload={iframeLoaded}></iframe>
+    </div>
+</template>

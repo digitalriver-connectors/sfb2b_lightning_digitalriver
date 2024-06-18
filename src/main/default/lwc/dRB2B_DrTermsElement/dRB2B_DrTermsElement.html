@@ -1,0 +1,55 @@
+<template>
+  <!-- Hide terms UI -->
+  <template if:false={hideTermsUI}>
+      <!-- Auto Initilize start-->
+      <template if:true={autoInitialize}>
+      <!-- checkbox -->
+      <template if:true={showTermsCheckbox}>
+        <div class="slds-p-around_x-small slds-text-title_caps">{header}</div>
+        <div class="slds-text-body_regular slds-box slds-m-around_xxx-small terms-mobile">
+        <div class="slds-m-left_large"  if:true={isSubscriptionProduct}>
+          <lightning-formatted-rich-text  value={drDisclosure.autorenewalPlanTerms.localizedText} class=" c-label"></lightning-formatted-rich-text>
+          <br/>
+          <br/>
+        </div>
+    
+        <div class="slds-grid slds-gutters ">
+
+          <!-- Loader -->
+          <div if:true={isLoading} class="slds-is-relative slds-m-top_small">
+            <lightning-spinner alternative-text="Loading..." variant="brand" size="small">
+            </lightning-spinner>
+          </div>
+          <!-- Loader -->
+
+          <div class="slds-col slds-size_1-of-24" >
+            <span><input type="checkbox" id="terms" name="authorize" onchange={handleCheckBoxChange}
+                required="required" class="input"></input></span>
+          </div>
+          <div class="slds-col slds-size_23-of-24 c-margin slds-m-right_medium">
+            <span>
+              <label for="terms" class="c-label">
+                <!-- <lightning-formatted-rich-text value={drDisclosure.resellerDisclosure.localizedText}></lightning-formatted-rich-text> 
+                <br/>-->
+                <lightning-formatted-rich-text value={drDisclosure.confirmDisclosure.localizedText}></lightning-formatted-rich-text>
+                <!-- <lightning-formatted-rich-text if:true={showAutoRenewalForSubs} value={drDisclosure.resellerDisclosure.localizedText}></lightning-formatted-rich-text>
+                <br/> -->
+                <!-- <lightning-formatted-url value={drDisclosure.termsOfSale.url}  label={drDisclosure.termsOfSale.localizedText} target="_blank" class="slds-m-right_x-small"></lightning-formatted-url>
+                <lightning-formatted-url value={drDisclosure.privacyPolicy.url}  label={drDisclosure.privacyPolicy.localizedText} target="_blank" class="slds-m-right_x-small"></lightning-formatted-url>
+                <lightning-formatted-url value={drDisclosure.cookiePolicy.url}  label={drDisclosure.cookiePolicy.localizedText} target="_blank"  class="slds-m-right_x-small"></lightning-formatted-url>
+                <lightning-formatted-url value={drDisclosure.cancellationRights.url}  label={drDisclosure.cancellationRights.localizedText} target="_blank"  class="slds-m-right_x-small"></lightning-formatted-url>
+                <lightning-formatted-url value={drDisclosure.legalNotice.url}  label={drDisclosure.legalNotice.localizedText} target="_blank" class="slds-m-right_x-small"></lightning-formatted-url> -->
+              </label>
+            </span>
+          </div> 
+        </div>
+      </div>
+      </template>
+      <!-- checkbox -->
+    </template>
+    <!-- Auto Initilize end-->
+  </template>
+  <div class="slds-hide">
+    <iframe src={communityURL} class="iframe-Class" onload={iframeLoaded}></iframe>
+  </div>
+</template>

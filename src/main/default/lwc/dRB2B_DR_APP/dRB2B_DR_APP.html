@@ -1,0 +1,76 @@
+<!--
+  @description       : 
+  @author            : Devanshu Sood
+  @group             : 
+  @last modified on  : 04-12-2021
+  @last modified by  : Arun Sood
+  Modifications Log 
+  Ver   Date         Author          Modification
+  1.0   03-31-2021   Devanshu Sood   Initial Version
+-->
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+    </template>
+    <lightning-card>
+        <h3 slot="title">Digital River App</h3>
+        <lightning-tabset active-tab-value="General" variant="scoped">
+            <template for:each={configData} for:item="configTab">
+                <lightning-tab label={configTab.key} key={configTab.key} value={configTab.key} onactive={tabChangeHandler}>
+                    <lightning-layout multiple-rows>
+                        <template for:each={configTab.value} for:item="configs">
+                            <lightning-layout-item key={configs.Id} size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+                               <template if:false={configs.digitalriverv3__IsPicklist__c}>
+                                <lightning-input
+                                    class="slds-m-bottom_small"
+                                    key={configs.Id}
+                                    type="text"
+                                    data-id={configs.Id}
+                                    label={configs.Label}
+                                    value={configs.digitalriverv3__Key__c}
+                                    field-level-help={configs.digitalriverv3__Helper_Text__c}
+                                    onchange={handleGenricChange}
+                                ></lightning-input>
+                               </template> 
+                               <template  if:true={configs.digitalriverv3__IsPicklist__c}>
+                                <lightning-combobox
+                                        key={configs.Id}
+                                        label={configs.Label}
+                                        value={configs.digitalriverv3__Key__c}
+                                        field-level-help={configs.digitalriverv3__Helper_Text__c}
+                                        data-id={configs.Id}
+                                        options={selectFromConfigOptions}
+                                        onchange={handleGenricChange} ></lightning-combobox>    
+                                </template>
+                            </lightning-layout-item>
+                        </template>
+                        <template if:true={isProductTabActive}>
+                            <lightning-button
+                                title={label.DR_Re_Sync_Btn_Title}
+                                label={label.DR_ReSync_All}
+                                class="slds-m-horizontal_x-small"
+                                disabled={disableButton}
+                                data-syncall="true"
+                                data-syncproduct="false"
+                                onclick={handleProductSyncAll}
+                            ></lightning-button>
+                            <lightning-button
+                                title={label.DR_Sync_Btn_Title}
+                                label={label.Sync_Products}
+                                class="slds-m-horizontal_x-small"
+                                disabled={disableButton}
+                                data-syncall="false"
+                                data-syncproduct="true"
+                                onclick={handleProductSyncAll}
+                            ></lightning-button>
+                        </template>
+                    </lightning-layout>
+                </lightning-tab>
+            </template>
+        </lightning-tabset>
+        <div slot="footer">
+            <lightning-button label={label.testConnection} class="slds-m-horizontal_x-small" onclick={handleTestConnection}></lightning-button>
+            <lightning-button variant="brand" label={label.DR_Save} class="slds-m-horizontal_x-small" onclick={handleSave}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
